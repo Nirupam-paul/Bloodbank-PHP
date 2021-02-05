@@ -25,97 +25,136 @@ if(isset($_POST['status_change'])){
     }
 }
 ?>
-<br>
-<div class="container">
-    <div class="card ">
-            <div class="card-text " style="font-weight: bold; font-size: 2.5rem; display: block; line-height: 1; margin: 1rem auto; ">
-                <span>Pending Contact<span>
-            </div>
+
+<div id="breadcrumb" class="division">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="breadcrumb-holder">
+          <!-- Breadcrumb Nav -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Contact
+              </li>
+            </ol>
+          </nav>
+          <h4 class="h4-sm steelblue-color">CONTACTS</h4>
+        </div>
+      </div>
     </div>
-    <div class="jumbotron">
+    <!-- End row -->
+  </div>
+  <!-- End container -->
+</div>
+
+<div id="pricing-2-page" class="wide-60 blog-page-section division">
+    <div class="container">
+        <div class="row ">
+            <!-- PRICING-2 HOLDER -->
+            <div class="col-lg-12 col-sm-12 col-md-12">
+                <div class="txt-block pr-30">
+                    <!-- Title -->
+                    <h3 class="h3-md steelblue-color text-center">Pending Contact</h3>
+                    <?php  if($res_pending_count > 0) { ?>
+                    <div class="pricing-table mb-40">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Contact Id</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col">Subject</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Contact user</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php while($row_pending = mysqli_fetch_assoc($res_pending)) { ?>
+                                <tr>
+                                    <td><?php echo $row_pending['contact_id'] ?></td>
+                                    <td><?php echo $row_pending['name'] ?></td>
+                                    <td><?php echo $row_pending['phone'] ?></td>
+                                    <td><?php echo $row_pending['subject'] ?></td>
+                                    <td><?php echo $row_pending['description'] ?></td>
+                                    <td><?php echo $row_pending['status'] ?></td>
+                                    <td>
+                                        <form method="POST">
+                                            <input type="hidden" name="contact_id" value="<?php echo $row_pending['contact_id'] ?>">
+                                            <button class="btn btn-sm btn-tra-black blue-hover" type="submit" name="status_change">Contact</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                                <?php  } ?>
+                            </tbody>
+                        </table>
+                    </div>
+                    <?php 
+                        }
+                        else{ 
+                        ?>
+                            <section id="pricing-1" class="bg-lightgrey wide-60 pricing-section division">
+                                    <h3 class="h3-md steelblue-color text-center mt-1 mb-1 p-0">No Record Found!</h3>
+                            </section>
+                            
+                        <?php
+                        }
+                        ?>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- PRICING-2 HOLDER -->
+            <div class="col-lg-12 col-sm-12 col-md-12">
+                <div class="txt-block pr-30">
+                    <h3 class="h3-md steelblue-color text-center">Successful Contacts</h3>
+                    <?php  if($res_success_count > 0) { ?>
+                    <div class="pricing-table mb-40">
+                        <table class="table table-hover">
+                            <thead>
+                                <th scope="col">Contact Id</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Phone</th>
+                                <th scope="col">Subject</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Status</th>
+                            </thead>
+                            <tbody>
+                            <?php while($row_success= mysqli_fetch_assoc($res_success)) { ?>
+                                <tr>
+                                <td><?php echo $row_success['contact_id'] ?></td>
+                                <td><?php echo $row_success['name'] ?></td>
+                                <td><?php echo $row_success['phone'] ?></td>
+                                <td><?php echo $row_success['subject'] ?></td>
+                                <td><?php echo $row_success['description'] ?></td>
+                                <td><?php echo $row_success['status'] ?></td>
+                                </tr>
+                                <?php 
+                            }
+                                ?>
+                            </tbody>
+                        </table>
+                    </div>
+                    <?php
+                        }
+                        else{
+                            ?>
+                            <section id="pricing-1" class="bg-lightgrey wide-60 pricing-section division">
+                                <h3 class="h3-md steelblue-color text-center mt-1 mb-1 p-0">No Blood Request Processing Found</h3>
+                            </section>
+                            
+                        <?php   
+                        }
+                        ?>
+                </div>
+            </div>
+        </div>
         
-        <?php  if($res_pending_count > 0) { ?>
-        <table class="table">
-            <thead>
-                <th scope="col">Contact Id</th>
-                <th scope="col">Name</th>
-                <th scope="col">Phone</th>
-                <th scope="col">Subject</th>
-                <th scope="col">Description</th>
-                <th scope="col">Status</th>
-                <th scope="col">Contact user</th>
-            </thead>
-            <tbody>
-            <?php while($row_pending = mysqli_fetch_assoc($res_pending)) { ?>
-                <tr>
-                <td><?php echo $row_pending['contact_id'] ?></td>
-                <td><?php echo $row_pending['name'] ?></td>
-                <td><?php echo $row_pending['phone'] ?></td>
-                <td><?php echo $row_pending['subject'] ?></td>
-                <td><?php echo $row_pending['description'] ?></td>
-                <td><?php echo $row_pending['status'] ?></td>
-                <td>
-                    <form method="POST">
-                        <input type="hidden" name="contact_id" value="<?php echo $row_pending['contact_id'] ?>">
-                        <button class="btn btn-sm btn-outline-primary" type="submit" name="status_change">Contact</button>
-                    </form>
-                </td>
-                </tr>
-                <?php 
-            }
-                ?>
-            </tbody>
-        </table>
-        <?php 
-        }
-        else{ 
-        ?>
-            <h3 class="alert alert-info">No Record Found!</h3>
-        <?php
-        }
-        ?>
-    </div>
-    <div class="card ">
-            <div class="card-text " style="font-weight: bold; font-size: 2.5rem; display: block; line-height: 1; margin: 1rem auto; ">
-                <span>Contact Successful<span>
-            </div>
-    </div>
-    <div class="jumbotron">
-        <?php  if($res_success_count > 0) { ?>
-        <table class="table">
-            <thead>
-                <th scope="col">Contact Id</th>
-                <th scope="col">Name</th>
-                <th scope="col">Phone</th>
-                <th scope="col">Subject</th>
-                <th scope="col">Description</th>
-                <th scope="col">Status</th>
-            </thead>
-            <tbody>
-            <?php while($row_success= mysqli_fetch_assoc($res_success)) { ?>
-                <tr>
-                <td><?php echo $row_success['contact_id'] ?></td>
-                <td><?php echo $row_success['name'] ?></td>
-                <td><?php echo $row_success['phone'] ?></td>
-                <td><?php echo $row_success['subject'] ?></td>
-                <td><?php echo $row_success['description'] ?></td>
-                <td><?php echo $row_success['status'] ?></td>
-                </tr>
-                <?php 
-            }
-                ?>
-            </tbody>
-        </table>
-        <?php 
-        }
-        else{ 
-        ?>
-            <h3 class="alert alert-info">No Record Found!</h3>
-        <?php
-        }
-        ?>
     </div>
 </div>
+
 <?php
 include('admin_footer.php');
 ?>

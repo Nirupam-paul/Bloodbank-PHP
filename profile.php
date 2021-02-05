@@ -57,22 +57,23 @@ if(isset($_POST['submit_delete'])){
 
 
 	<!-- DOCTOR BREADCRUMBS -->
-    <section id="doctor-breadcrumbs" class="bg-fixed doctor-details-section division"><div class="container">
-					<div class="row">
-						<div class="col-md-7 offset-md-5">
-			 				<div class="doctor-data white-color">
-			 					<h2 class="h2-xs"><?php echo $name ?></h2>
-							</div>
-						</div>
-					</div>   <!-- End row -->	
-				</div>	  <!-- End container -->
-			</section><!-- END DOCTOR BREADCRUMBS -->
+    <section id="doctor-breadcrumbs" class="bg-fixed doctor-details-section division">
+        <div class="container">
+			<div class="row">
+				<div class="col-md-7 offset-md-5">
+			 		<div class="doctor-data white-color">
+			 			<h2 class="h2-xs"><?php echo $name ?></h2>
+					</div>
+				</div>
+			</div>   <!-- End row -->	
+		</div>	  <!-- End container -->
+	</section><!-- END DOCTOR BREADCRUMBS -->
             
             <!-- DOCTOR-1 DETAILS -->
 	<section id="doctor-1-details" class="doctor-details-section division" style="background-color: #DBF1FF;">
-        <div class="container">
+        <div class="container ">
 		    <div class="row">
-						<div class="col-md-5">
+						<div class="col-md-4">
 			 				<div class="doctor-photo mb-40">
 			 					<img class="img-fluid" src="images/images-doctor-3.jpg" alt="User Image">
                                  
@@ -113,29 +114,45 @@ if(isset($_POST['submit_delete'])){
 
 
 			 			<!-- DOCTOR'S BIO -->
-						<div class="col-md-7">
+						<div class="col-md-8">
 							<div class="doctor-bio">
                             <h5 class="h5-md steelblue-color">My Request</h5>
                             <div class="pricing-table mb-40">								
-									<table class="table table-hover"><thead><tr><th scope="col">#</th>
-										      	<th scope="col">Service</th>
-										      	<th scope="col">Price</th>
-										    </tr></thead><tbody><tr><th scope="row">1</th>
+									<table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Request Id</th>
+                                                <th scope="col">Requested BG</th>
+                                                <th scope="col">Request Date</th>
+                                                <th scope="col">Detail</th>
+                                                <th scope="col">Status</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
 										     	<td>X-Ray</td>
 										      	<td>From <span>$1325.00</span></td>
-										    </tr><tr><th scope="row">2</th>
+										    </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
 										      	<td>Magnetic Resonance Imaging</td>
 										      	<td>From <span>$1435.00</span></td>
-										    </tr><tr><th scope="row">3</th>
+										    </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
 										      	<td>Computer Tomography</td>
 										      	<td>From <span>$1315.00</span></td>
-										    </tr><tr><th scope="row">4</th>
+										    </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
 										      	<td>Laboratory Tests</td>
 										      	<td>From <span>$890.00</span></td>
-										    </tr><tr><th scope="row">5</th>
+										    </tr>
+                                            <tr><th scope="row">5</th>
 										      	<td>Ultrasound Imaging</td>
 										      	<td>From <span>$985.00</span></td>
-										    </tr><tr class="last-tr"><th scope="row">6</th>
+										    </tr>
+                                            <tr class="last-tr"><th scope="row">6</th>
 										      	<td>Pregnancy Care Service</td>
 										      	<td>From <span>$1130.00</span></td>
 										    </tr>
@@ -154,38 +171,7 @@ if(isset($_POST['submit_delete'])){
 
 
     <div class="container">
-    <br>
-    <div class="card ">
-        <div class="card-text " style="font-weight: bold; font-size: 2.5rem; display: block; line-height: 1; margin: 1rem auto;">
-            <span>PROFILE<span>
-        </div>
-    </div>
-    <div class="jumbotron pt-5">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">Name</th>
-                        <th scope="col">Age</th>
-                        <th scope="col">Gender</th>
-                        <th scope="col">Phone</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Blood Group</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><?php echo $name ?></td>
-                        <td><?php echo $age ?></td>
-                        <td><?php echo $gender ?></td>
-                        <td><?php echo $phone ?></td>
-                        <td><?php echo $email ?></td>
-                        <td><?php echo $blood_group ?></td>
-                    </tr>
-                </tbody>
-            </table>
-    </div>
-    <br><br>
-
+    
     <div class="card ">
         <div class="card-text " style="font-weight: bold; font-size: 2.5rem; display: block; line-height: 1; margin: 1rem auto; ">
             <span>Pending Request's<span>

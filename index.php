@@ -83,13 +83,14 @@ $res_blood_dona_count = mysqli_num_rows($res_blood_dona);
             <!-- ABOUT BOX #2 -->
             <div id="abox-2" class="col-md-6 col-lg-3">
                 <div class="abox-1 white-color">
-                    <h5 class="h5-md">Doctors Timetable</h5>
+                    <h5 class="h5-md">24 Hour Service</h5>
                     <!-- Text -->
+                    <h6 class="h6-md">HIGHEST QUALITY CARE</h6>
+                    <br>
                     <p>An magnis nulla dolor at sapien augue erat iaculis purus tempor magna ipsum and
                     vitae a purus primis ipsum magna ipsum
                     </p>
-                    <!-- Button -->
-                    <a href="timetable.html" class="btn btn-sm btn-tra-white mt-25">View Timetable</a>
+                    
                 </div>
             </div>
 
@@ -97,13 +98,14 @@ $res_blood_dona_count = mysqli_num_rows($res_blood_dona);
             <div id="abox-3" class="col-md-6 col-lg-3">
                 <div class="abox-1 white-color">
                     <!-- Title -->
-                    <h5 class="h5-md">Appointments</h5>
+                    <h5 class="h5-md">Qualified Doctors</h5>
                     <!-- Text -->
+                    <h6 class="h6-md">WHERE PEOPLE COME FIRST</h6>
+                    <br>
                     <p>An magnis nulla dolor at sapien augue erat iaculis purus tempor magna ipsum and
                     vitae a purus primis ipsum magna ipsum
                     </p>
-                    <!-- Button -->
-                    <a href="#" class="btn btn-sm btn-tra-white mt-25">Make an Apointment</a>
+                    
                 </div>
             </div>
             <!-- ABOUT BOX #4 -->
@@ -124,14 +126,14 @@ $res_blood_dona_count = mysqli_num_rows($res_blood_dona);
 
 
 
-<section id="about-5" class="pt-100 about-section division"><div class="container">
-            <div class="row d-flex align-items-center">
-
-
-<!-- IMAGE BLOCK -->
-<div class="col-lg-6">
-    <div class="about-img text-center wow fadeInUp" data-wow-delay="0.6s">
-        <img class="img-fluid" src="images/images-image-03.png" alt="about-image"></div>
+<section id="about-5" class="pt-100 about-section division">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-6">
+                <div class="about-img text-center wow fadeInUp" data-wow-delay="0.6s">
+                    <img class="img-fluid" src="images/images-image-02.png" alt="about-image">
+                </div>
+                
 </div>
 
 
@@ -221,6 +223,21 @@ $res_blood_dona_count = mysqli_num_rows($res_blood_dona);
 			<div class="col-md-6 col-lg-3 gallery-item">
 				<div class="hover-overlay"> 
 					<img class="img-fluid" src="images/gallery-image-1.jpg" alt="gallery-image">			
+				</div>
+			</div>
+            <div class="col-md-6 col-lg-3 gallery-item">
+				<div class="hover-overlay"> 
+					<img class="img-fluid" src="images/gallery-image-2.jpg" alt="gallery-image">			
+				</div>
+			</div>
+            <div class="col-md-6 col-lg-3 gallery-item">
+				<div class="hover-overlay"> 
+					<img class="img-fluid" src="images/gallery-image-3.jpg" alt="gallery-image">			
+				</div>
+			</div>
+            <div class="col-md-6 col-lg-3 gallery-item">
+				<div class="hover-overlay"> 
+					<img class="img-fluid" src="images/gallery-image-4.jpg" alt="gallery-image">			
 				</div>
 			</div>
 		</div> 

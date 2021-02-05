@@ -114,7 +114,7 @@ elseif(isset($_POST['submit_pending'])){
 
 <div id="pricing-2-page" class="wide-60 blog-page-section division">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row ml-5">
             <!-- PRICING-2 HOLDER -->
             <div class="col-lg-12 col-sm-12 col-md-12">
                 <div class="txt-block pr-30">
@@ -183,7 +183,7 @@ elseif(isset($_POST['submit_pending'])){
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row ml-5">
             <!-- PRICING-2 HOLDER -->
             <div class="col-lg-12 col-sm-12 col-md-12">
                 <div class="txt-block pr-30">
@@ -250,7 +250,7 @@ elseif(isset($_POST['submit_pending'])){
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row ml-5">
             <!-- PRICING-2 HOLDER -->
             <div class="col-lg-12 col-sm-12 col-md-12">
                 <div class="txt-block pr-30">

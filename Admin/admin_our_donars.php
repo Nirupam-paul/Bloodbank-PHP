@@ -28,25 +28,14 @@ $res_count = mysqli_num_rows($res);
   <!-- End container -->
 </div>
 
-<div id="pricing-2-page" class="wide-60 blog-page-section division">
+<div id="pricing-2-page" class="wide-60 blog-page-section division bg-lightgrey">
     <div class="container">
         <div class="row">
         <!-- PRICING-2 HOLDER -->
             <div class="col-lg-12 col-sm-12 col-md-12">
                 <div class="txt-block pr-30">
                     <!-- Title -->
-                    <h3 class="h3-md steelblue-color">Donar Information</h3>
-
-                    <!-- Text -->
-                    <p class="mb-50">
-                        Porta semper lacus cursus, feugiat primis ultrice in ligula risus
-                        auctor tempus feugiat dolor lacinia cubilia curae integer congue leo
-                        metus, primis in orci integer metus mollis faucibus enim. Nemo ipsam
-                        egestas volute turpis dolores ut aliquam quaerat sodales sapien undo
-                        pretium purus feugiat dolor impedit magna purus pretium gravida
-                        donec ligula massa gravida donec pretium
-                    </p>
-
+                    <h3 class="h3-md steelblue-color text-center">Donar Information</h3>
                     <!-- Plan Title  -->
                     <h5 class="h5-md steelblue-color">
                         Registered Donar
@@ -104,43 +93,6 @@ $res_count = mysqli_num_rows($res);
         </div>
     </div>
 </div>
-
-<section id="pricing-1" class="bg-lightgrey wide-60 pricing-section division">
-    
-</section>
-
-<section id="banner-5" class="pt-100 banner-section division">
-    <div class="container">
-
-
-        <!-- SECTION TITLE -->
-        <div class="row">
-            <div class="col-lg-10 offset-lg-1 section-title">
-
-                <!-- Title 	-->
-                <h3 class="h3-md steelblue-color">Certified and Experienced Doctors</h3>
-
-                <!-- Text -->
-                <p>Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero at tempus,
-                    blandit posuere ligula varius congue cursus porta feugiat
-                </p>
-
-            </div>
-        </div>
-
-
-        <!-- BANNER IMAGE -->
-        <div class="row">
-            <div class="col-lg-10 offset-lg-1">
-                <div class="banner-5-img wow fadeInUp" data-wow-delay="0.4s">
-                    <img class="img-fluid" src="images/images-image-07.png" alt="banner-image">
-                </div>
-            </div>
-        </div>
-
-
-    </div> <!-- End container -->
-</section>
-          
-    <?php include('admin_footer.php'); ?>
+        
+<?php include('admin_footer.php'); ?>
         

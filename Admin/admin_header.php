@@ -81,7 +81,7 @@ else{
                     <a class="linkedinicon" title="Linkedin" href="#"><i class="fab fa-linkedin-in"></i> <span class="mobiletext02">Linkedin</span></a>
                     <a class="twittericon" title="Twitter" href="#"><i class="fab fa-twitter"></i> <span class="mobiletext02">Twitter</span></a>
                     <a class="facebookicon" title="Facebook" href="#"><i class="fab fa-facebook-f"></i> <span class="mobiletext02">Facebook</span></a>
-                    <span><?php echo strtoupper($admin_name) ?></span>
+                    
                 </div>
               </div>
           </div>	<!-- END HEADER STRIP -->
@@ -94,7 +94,7 @@ else{
                 <!-- LOGO IMAGE -->
                 <!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 360 x 80 pixels) -->
                 <div class="desktoplogo">
-                  <a href="#hero-1"><img src="images/images-logo-grey.png" width="180" height="40" alt="header-logo"></a>
+                  <a href="#hero-1"><img src="images/logo-grey.png" width="180" height="40" alt="header-logo"></a>
                 </div>
 
                 <!-- MAIN MENU -->
@@ -116,9 +116,14 @@ else{
                               <li aria-haspopup="true"><a href="admin_employees_view.php">View</a></li>
                           </ul>
                         </li>	<!-- END DROPDOWN MENU -->
-                        <li class="nl-simple" aria-haspopup="true"><a href="admin_logout.php">Logout</a></li>
+                        <li aria-haspopup="true"><a href="#"><i class="fa fa-user" aria-hidden="true"></i><?php echo strtoupper($admin_name) ?><span class="wsarrow"></span></a>
+                          <ul class="sub-menu">
+                              <li aria-haspopup="true"><a href="admin_logout.php">Logout</a></li>
+                          </ul>
+                        </li>
+                        
                         <!-- NAVIGATION MENU BUTTON -->
-                        <li class="nl-simple header-btn" aria-haspopup="true"><a href="admin_search.php">Search</a></li>
+                        <li class="nl-simple header-btn" aria-haspopup="true"><a href="admin_search.php"><i class="fa fa-search" aria-hidden="true"></i>Search</a></li>
                       </ul>
                   </nav><!-- END MAIN MENU -->
                 </div>

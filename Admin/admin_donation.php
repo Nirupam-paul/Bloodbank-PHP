@@ -40,73 +40,69 @@ if (isset($_POST['donation_submit'])) {
 
 ?>
 
-
-
-<div class="container" style="margin-top: 50px;">
-<div class="card">
-    <form method="POST" style="padding-left: 100px; padding-right: 100px; ">
-        <div class="text-center" style="margin-top: 20px; margin-bottom: 10px;">
-            <strong>
-                <h1>DONATION DETAILS ENTRY</h1>
-            </strong>
-        </div>
-        <div class="input-group mb-3" style="padding-top: 30px;">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">Donar Name</span>
-            </div>
-            <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" name="donar_name">
-        </div>
-        <div class="input-group mb-3" style="padding-top: 10px;">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">Phone Number</span>
-            </div>
-            <input type="number" class="form-control" aria-label="Username" aria-describedby="basic-addon1" name="phone">
-        </div>
-        <div class="input-group mb-3" style="padding-top: 10px;">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">Email</span>
-            </div>
-            <input type="email" class="form-control" aria-label="Username" aria-describedby="basic-addon1" name="email_name">
-        </div>
-        <div class="input-group mb-3" style="padding-top: 10px;">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">Select Blood Group</span>
-            </div>
-            <select class="form-control" aria-label="Username" aria-describedby="basic-addon1" name="blood_group">
-                <option selected>A+</option>
-                <option>A-</option>
-                <option>B+</option>
-                <option>B-</option>
-                <option>AB+</option>
-                <option>AB-</option>
-                <option>O+</option>
-                <option>O-</option>
-            </select>
-        </div>
-        <div class="input-group mb-3" style="padding-top: 10px;">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">Select Camp Name</span>
-            </div>
-            <?php if ($camp_row > 0) { ?>
-            <select class="form-control" aria-label="Username" aria-describedby="basic-addon1" name="camp_name">
-                <?php
-                while ($row = mysqli_fetch_assoc($res_camp)) { ?>
-                    <option value="<?php echo $row['camp_title'] ?>"><?php echo $row['camp_title'] ?></option>
+<section id="hero-4" class="bg-fixed hero-section division">
+	<div class="container">
+        <h2 class="h2-sm steelblue-color text-center">DONAR ENTRY </h2>
+        <div id="hero-section-form" class="text-center mb-40">
+            <form method="POST" style="padding-left: 100px; padding-right: 100px; ">
+                <div class="input-group mb-3" style="padding-top: 30px;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-blue white-color" id="basic-addon1">Donar Name</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" name="donar_name">
+                </div>
+                <div class="input-group mb-3" style="padding-top: 10px;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-blue white-color" id="basic-addon1">Phone Number</span>
+                    </div>
+                    <input type="number" class="form-control" aria-label="Username" aria-describedby="basic-addon1" name="phone">
+                </div>
+                <div class="input-group mb-3" style="padding-top: 10px;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-blue white-color" id="basic-addon1">Email</span>
+                    </div>
+                    <input type="email" class="form-control" aria-label="Username" aria-describedby="basic-addon1" name="email_name">
+                </div>
+                <div class="input-group mb-3" style="padding-top: 10px;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-blue white-color" id="basic-addon1">Select Blood Group</span>
+                    </div>
+                    <select class="form-control" aria-label="Username" aria-describedby="basic-addon1" name="blood_group">
+                        <option selected>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                        <option>O+</option>
+                        <option>O-</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3" style="padding-top: 10px;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-blue white-color" id="basic-addon1">Select Camp Name</span>
+                    </div>
+                    <?php if ($camp_row > 0) { ?>
+                    <select class="form-control" aria-label="Username" aria-describedby="basic-addon1" name="camp_name">
+                        <?php
+                        while ($row = mysqli_fetch_assoc($res_camp)) { ?>
+                            <option value="<?php echo $row['camp_title'] ?>"><?php echo $row['camp_title'] ?></option>
+                        <?php
+                        }
+                        ?>
+                    </select>
                 <?php
                 }
                 ?>
-            </select>
-        <?php
-        }
-        ?>
-        </div>
-        <div class="text-center" style="padding-top: 30px;">
-            <button type="submit" class="btn btn-danger " name="donation_submit" style="margin: 10px; width: 30%;">Enter </button>
-        </div>
-    </form>
+                </div>
+                <div class="text-center" style="padding-top: 30px;">
+                    <button type="submit" class="btn btn-orange btn-sm btn-tra-black blue-hover " name="donation_submit" style="margin: 10px; width: 30%;">Enter </button>
+                </div>
+            </form>
+		</div>
     </div>
-    <br>
-</div>
+</section>
+
 
 <?php
 include('admin_footer.php');
