@@ -224,6 +224,7 @@ if($res_camps_count > 0){ ?>
  
 ?>
 </div>
+</div>
 <br>
 <?php
 include('admin_footer.php');
