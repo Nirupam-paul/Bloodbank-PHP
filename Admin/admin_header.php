@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Page</title>
-    <link rel="stylesheet" href="css/admin_main.css">
-    <!-- Font Awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-<!-- Google Fonts -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-<!-- Bootstrap core CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-<!-- Material Design Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-<script src="https://kit.fontawesome.com/fec88a570a.js" crossorigin="anonymous"></script>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-
-</head>
-<body>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="author" content="Jthemes">
+		<meta name="description" content="MedService - Medical &amp; Medical Health Landing Page Template">
+		<meta name="keywords" content="Responsive, HTML5 Template, Jthemes, One Page, Landing, Medical, Health, Healthcare, Doctor, Clinic, Care, Hospital">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- SITE TITLE -->
+		<title>MedService - Medical &amp; Medical Health Landing Page Template</title>
+		<!-- FAVICON AND TOUCH ICONS  -->
+		<link rel="shortcut icon" href="favicons/9816-images-favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicons/5557-images-favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" sizes="152x152" href="favicons/1714-images-apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="favicons/7311-images-apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="favicons/2968-images-apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" href="favicons/719-images-apple-touch-icon.png">
+		<!-- GOOGLE FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+		<!-- BOOTSTRAP CSS -->
+		<link href="css/css-bootstrap.min.css" rel="stylesheet">
+		<!-- FONT ICONS -->
+		<link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" rel="stylesheet" crossorigin="anonymous">
+		<link href="css/css-flaticon.css" rel="stylesheet">
+		<!-- PLUGINS STYLESHEET -->
+		<link href="css/css-menu.css" rel="stylesheet">
+		<link id="effect" href="css/dropdown-effects-fade-down.css" media="all" rel="stylesheet">
+		<link href="css/css-magnific-popup.css" rel="stylesheet">
+		<link href="css/css-owl.carousel.min.css" rel="stylesheet">
+		<link href="css/css-owl.theme.default.min.css" rel="stylesheet">
+		<link href="css/css-animate.css" rel="stylesheet"><link href="css/css-jquery.datetimepicker.min.css" rel="stylesheet">
+		<!-- TEMPLATE CSS -->
+		<link href="css/css-style.css" rel="stylesheet"><!-- RESPONSIVE CSS --><link href="css/css-responsive.css" rel="stylesheet">
+	</head>
+	<body>
 
 <?php
 include('../databaseconnect.php');
@@ -36,72 +49,82 @@ else{
 
 ?>
 
-<div class="content" >
+<!-- PAGE CONTENT
+		============================================= -->	
+		<div id="page" class="page">
 
-  <div style="background: #f05454; margin-bottom: 0px;">
-    <div class="container">
-    <img src="images/slogan3.png"  width="100%" height="auto">
-    </div>
-  </div>
 
-<nav class="navbar navbar-expand-lg navbar-dark " style="background: #30475e">
-<div class="container">
-  <a class="navbar-brand" href=""><img src="images/logo4.png" height="35px" width="80px"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item ">
-        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="admin_blood_request.php">Requests</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " href="admin_camps.php">Camps</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " href="admin_donation.php">Donar Entry</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " href="admin_our_donars.php">Our Donars</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " href="admin_contact.php">Contacts</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " href="admin_search.php">Search</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Employee
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="admin_emp_regestration.php">Register</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="admin_employees_view.php">View</a>
+			<!-- HEADER
+			============================================= -->
+			<header id="header" class="header"><!-- MOBILE HEADER -->
+			
+        <div class="wsmobileheader clearfix">
+              <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+              <span class="smllogo"><img src="images/logo-grey.png" width="180" height="40" alt="mobile-logo"/></span>
+              <a href="tel:123456789" class="callusbtn"><i class="fas fa-phone"></i></a>
         </div>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0" style="padding-right: 5px;">
-    <div class="dropdown" style="border: none;">      
-      <span class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;"><?php echo strtoupper($admin_name) ?><i style="padding: 5px;"class="fas fa-user fa-lg"></i></span>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-right: 5px; text-align: left;  min-width: 120px; background: white; border: none; ">
-        <a class="dropdown-item" href="admin_logout.php">Logout</a> 
-      </div> 
-    </form>
-  </div>
-  </div>
-</nav>
+
+          <!-- HEADER STRIP -->
+          <div class="headtoppart bg-blue clearfix">
+              <div class="headerwp clearfix">
+
+                <!-- Address -->
+                <div class="headertopleft">			     			
+                    <div class="address clearfix"><span><i class="fas fa-map-marker-alt"></i>121 King St,
+                        Melbourne, VIC 3000 </span> <a href="tel:123456789" class="callusbtn"><i class="fas fa-phone"></i>(800)-569-7890</a>
+                      </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="headertopright">
+                  <a class="googleicon" title="Google" href="#"><i class="fab fa-google"></i> <span class="mobiletext02">Google</span></a>
+                    <a class="linkedinicon" title="Linkedin" href="#"><i class="fab fa-linkedin-in"></i> <span class="mobiletext02">Linkedin</span></a>
+                    <a class="twittericon" title="Twitter" href="#"><i class="fab fa-twitter"></i> <span class="mobiletext02">Twitter</span></a>
+                    <a class="facebookicon" title="Facebook" href="#"><i class="fab fa-facebook-f"></i> <span class="mobiletext02">Facebook</span></a>
+                    <span><?php echo strtoupper($admin_name) ?></span>
+                </div>
+              </div>
+          </div>	<!-- END HEADER STRIP -->
 
 
-<!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+            <!-- NAVIGATION MENU -->
+            <div class="wsmainfull menu clearfix">
+              <div class="wsmainwp clearfix">
+
+                <!-- LOGO IMAGE -->
+                <!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 360 x 80 pixels) -->
+                <div class="desktoplogo">
+                  <a href="#hero-1"><img src="images/images-logo-grey.png" width="180" height="40" alt="header-logo"></a>
+                </div>
+
+                <!-- MAIN MENU -->
+                  <nav class="wsmenu clearfix">
+                      <ul class="wsmenu-list">
+                        <li class="nl-simple" aria-haspopup="true"><a href="index.php">Home</a></li>
+                        <li class="nl-simple" aria-haspopup="true"><a href="admin_blood_request.php">Requests</a></li>
+                        <li class="nl-simple" aria-haspopup="true"><a href="admin_camps.php">Camps</a></li>
+                        <li aria-haspopup="true"><a href="#">Donar <span class="wsarrow"></span></a>
+                          <ul class="sub-menu">
+                              <li aria-haspopup="true"><a href="admin_donation.php">Register</a></li>
+                              <li aria-haspopup="true"><a href="admin_our_donars.php">View</a></li>
+                          </ul>
+                        </li>
+                        <li class="nl-simple" aria-haspopup="true"><a href="admin_contact.php">Contacts</a></li>
+                        <li aria-haspopup="true"><a href="#">Employee <span class="wsarrow"></span></a>
+                          <ul class="sub-menu">
+                              <li aria-haspopup="true"><a href="admin_emp_regestration.php">Register</a></li>
+                              <li aria-haspopup="true"><a href="admin_employees_view.php">View</a></li>
+                          </ul>
+                        </li>	<!-- END DROPDOWN MENU -->
+                        <li class="nl-simple" aria-haspopup="true"><a href="admin_logout.php">Logout</a></li>
+                        <!-- NAVIGATION MENU BUTTON -->
+                        <li class="nl-simple header-btn" aria-haspopup="true"><a href="admin_search.php">Search</a></li>
+                      </ul>
+                  </nav><!-- END MAIN MENU -->
+                </div>
+            </div>	<!-- END NAVIGATION MENU -->
+
+
+			</header>
+
+			<!-- END HEADER -->

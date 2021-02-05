@@ -25,6 +25,23 @@ if(isset($_POST['camp_submit'])){
 }
 ?>
 
+<div id="breadcrumb" class="division">
+				<div class="container">
+					<div class="row">						
+						<div class="col">
+							<div class=" breadcrumb-holder">
+
+								<!-- Breadcrumb Nav -->
+								<nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.php">Home</a></li>
+								    	<li class="breadcrumb-item active"><a href="admin_camps.php">Camps</a></li>
+								    	
+								  	</ol></nav><!-- Title --><h4 class="h4-sm steelblue-color">CAMPS </h4>
+
+							</div>
+						</div>
+					</div>  <!-- End row -->	
+				</div>	<!-- End container -->		
+			</div>	<!-- END BREADCRUMB -->	
 
 <div class="container" style="margin-top: 50px;">
     <div class="jumbotron">
