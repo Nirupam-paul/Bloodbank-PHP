@@ -1,45 +1,120 @@
 <?php
 include('header.php');
 ?>
-<div class="container" style="margin-top: 50px;">
-    <div class="jumbotron">
-    <form method="POST" style="padding-left: 100px; padding-right: 100px; ">
-        <div class="text-center" style="margin-top: 10px; margin-bottom: 10px;">
-            <strong><h1 class="display-4">REQUEST HERE</h1></strong>
-        </div>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01">BloodGroup</label>
-            </div>
-            <select class="custom-select" id="inputGroupSelect01" name="bggroup">
-                <option selected>A+</option>
-                <option >A-</option>
-                <option >B+</option>
-                <option >B-</option>
-                <option >AB+</option>
-                <option >AB-</option>
-                <option >O+</option>
-                <option >O-</option>
-            </select>
-        </div>
-        <div class="input-group mb-3" style="padding-top: 15px;">
-        <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">Date</span>
-        </div>
-        <input type="date" class="form-control"  aria-label="Username" aria-describedby="basic-addon1" name="reqdate">
-        </div>
-        <div class="input-group" style="padding-top: 15px;">
-        <div class="input-group-prepend">
-            <span class="input-group-text">Enter Details</span>
-        </div>
-        <textarea class="form-control" aria-label="With textarea" name="detail"></textarea>
-        </div>
-        <div class="text-center" style="padding-top: 30px;">
-            <button type="submit" class="btn btn-danger " name="request_submit" style="margin: 10px; width: 30%;" >Submit</button>
-        </div>
-    </form>
-    </div> 
-</div>
+
+
+<div id="breadcrumb" class="division">
+				<div class="container">
+					<div class="row">						
+						<div class="col">
+							<div class=" breadcrumb-holder">
+
+								<!-- Breadcrumb Nav -->
+								<nav aria-label="breadcrumb">
+								  	<ol class="breadcrumb">
+								    	<li class="breadcrumb-item"><a href="index.php">Home</a></li>
+								    	<li class="breadcrumb-item active" aria-current="page">Requset</li>
+								  	</ol>
+								</nav>
+
+								<!-- Title -->
+								<h4 class="h4-sm steelblue-color">Request</h4>
+
+							</div>
+						</div>
+					</div>  <!-- End row -->	
+				</div>	<!-- End container -->		
+			</div>
+
+<div id="appointment-page" class="wide-60 appointment-page-section division" style="background-color: #DBF1FF;">
+				<div class="container">
+				 	<div class="row">
+
+
+				 		<!-- SERVICE DETAILS -->
+				 		<div class="col-lg-8">
+				 			<div class="txt-block pr-30">
+
+				 				<!-- Title -->
+								<h3 class="h3-md steelblue-color text-center">Request Here</h3>
+
+								<!-- APPOINTMENT FORM -->
+								<div id="appointment-form-holder" class="text-center">
+
+                                <form method="POST">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text" for="inputGroupSelect01">BloodGroup</label>
+                                        </div>
+                                        <select class="custom-select" id="inputGroupSelect01" name="bggroup">
+                                            <option selected>A+</option>
+                                            <option >A-</option>
+                                            <option >B+</option>
+                                            <option >B-</option>
+                                            <option >AB+</option>
+                                            <option >AB-</option>
+                                            <option >O+</option>
+                                            <option >O-</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group mb-3" style="padding-top: 15px;">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">Date</span>
+                                    </div>
+                                    <input type="date" class="form-control"  aria-label="Username" aria-describedby="basic-addon1" name="reqdate">
+                                    </div>
+                                    <div class="input-group" style="padding-top: 15px;">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Enter Details</span>
+                                    </div>
+                                    <textarea class="form-control" aria-label="With textarea" name="detail"></textarea>
+                                    </div>
+                                    <div class="text-center" style="padding-top: 30px;">
+                                        <button type="submit" class="btn btn-blue blue-hover submit" name="request_submit" style="margin: 10px; width: 30%;" >Submit</button>
+                                    </div>
+                                </form>
+								</div>					 				
+				 			</div>
+				 		</div>	<!-- END SERVICE DETAILS -->
+
+
+				 		<!-- SIDEBAR -->
+						<aside id="sidebar" class="col-lg-4">
+
+
+							<!-- TEXT WIDGET -->						
+							<div id="txt-widget" class="sidebar-div mb-50">
+										
+								<!-- Title -->
+								<h5 class="h5-sm steelblue-color">The Heart Of Clinic</h5>
+
+								<!-- Head of Clinic -->
+								<div class="txt-widget-unit mb-15 clearfix d-flex align-items-center">
+								
+									<!-- Avatar -->
+									<div class="txt-widget-avatar">
+										<img src="images/head-of-clinic.jpg" alt="testimonial-avatar">
+									</div>
+
+									<!-- Data -->
+									<div class="txt-widget-data">
+										<h5 class="h5-md steelblue-color">Dr. Jonathan Barnes</h5>	
+										<span>Chief Medical Officer, Founder</span>	
+										<p class="blue-color">1-800-1234-567</p>	
+									</div>
+
+								</div>
+								<p class="p-sm">An enim nullam tempor sapien at gravida donec pretium ipsum porta justo
+								   integer at odiovelna vitae auctor integer congue magna purus
+								</p>
+								<a href="about.html" class="btn btn-blue blue-hover">Learn More</a>
+																		
+							</div>
+						</aside>  
+					</div>	<!-- End row -->	
+				</div>	 <!-- End container -->
+			</div>
+
 
 
 <?php 

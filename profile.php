@@ -54,7 +54,106 @@ if(isset($_POST['submit_delete'])){
 }
 ?>
 
-<div class="container">
+
+
+	<!-- DOCTOR BREADCRUMBS -->
+    <section id="doctor-breadcrumbs" class="bg-fixed doctor-details-section division"><div class="container">
+					<div class="row">
+						<div class="col-md-7 offset-md-5">
+			 				<div class="doctor-data white-color">
+			 					<h2 class="h2-xs"><?php echo $name ?></h2>
+							</div>
+						</div>
+					</div>   <!-- End row -->	
+				</div>	  <!-- End container -->
+			</section><!-- END DOCTOR BREADCRUMBS -->
+            
+            <!-- DOCTOR-1 DETAILS -->
+	<section id="doctor-1-details" class="doctor-details-section division" style="background-color: #DBF1FF;">
+        <div class="container">
+		    <div class="row">
+						<div class="col-md-5">
+			 				<div class="doctor-photo mb-40">
+			 					<img class="img-fluid" src="images/images-doctor-3.jpg" alt="User Image">
+                                 
+                                 <div class="doctor-info" style="background-color: #DBF1FF;">
+									<table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td>Age</td>
+										      	<td><span><i class="fas fa-angle-double-right"></i> <?php echo $age ?></span>
+										      	</td>
+										   	</tr>
+                                               <tr>
+                                                <td>Gender</td>
+										      	<td><span><i class="fas fa-angle-double-right"></i> <?php echo $gender ?></span>
+										      	</td>
+										   	</tr>
+                                               <tr>
+                                                <td>Phone</td>
+										      	<td><span><i class="fas fa-angle-double-right"></i> <?php echo $phone ?></span>
+										      	</td>
+										   	</tr>
+                                               <tr>
+                                                <td>Email</td>
+										      	<td><span><i class="fas fa-angle-double-right"></i> <?php echo $email ?></span>
+										      	</td>
+										   	</tr>
+                                               <tr>
+                                                <td>Blood Group</td>
+										      	<td><span><i class="fas fa-angle-double-right"></i> <?php echo $blood_group ?></span>
+										      	</td>
+										   	</tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+			 				</div>
+			 			</div>	<!-- END DOCTOR PHOTO -->
+
+
+			 			<!-- DOCTOR'S BIO -->
+						<div class="col-md-7">
+							<div class="doctor-bio">
+                            <h5 class="h5-md steelblue-color">My Request</h5>
+                            <div class="pricing-table mb-40">								
+									<table class="table table-hover"><thead><tr><th scope="col">#</th>
+										      	<th scope="col">Service</th>
+										      	<th scope="col">Price</th>
+										    </tr></thead><tbody><tr><th scope="row">1</th>
+										     	<td>X-Ray</td>
+										      	<td>From <span>$1325.00</span></td>
+										    </tr><tr><th scope="row">2</th>
+										      	<td>Magnetic Resonance Imaging</td>
+										      	<td>From <span>$1435.00</span></td>
+										    </tr><tr><th scope="row">3</th>
+										      	<td>Computer Tomography</td>
+										      	<td>From <span>$1315.00</span></td>
+										    </tr><tr><th scope="row">4</th>
+										      	<td>Laboratory Tests</td>
+										      	<td>From <span>$890.00</span></td>
+										    </tr><tr><th scope="row">5</th>
+										      	<td>Ultrasound Imaging</td>
+										      	<td>From <span>$985.00</span></td>
+										    </tr><tr class="last-tr"><th scope="row">6</th>
+										      	<td>Pregnancy Care Service</td>
+										      	<td>From <span>$1130.00</span></td>
+										    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+							</div>
+						</div>	<!-- END DOCTOR BIO -->
+
+
+					</div>    <!-- End row -->	
+				</div>	   <!-- End container -->
+			</section><!-- END DOCTOR-1 DETAILS -->
+
+
+
+
+    <div class="container">
     <br>
     <div class="card ">
         <div class="card-text " style="font-weight: bold; font-size: 2.5rem; display: block; line-height: 1; margin: 1rem auto;">

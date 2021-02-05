@@ -83,7 +83,6 @@
 					        <a class="linkedinicon" title="Linkedin" href="#"><i class="fab fa-linkedin-in"></i> <span class="mobiletext02">Linkedin</span></a>
 					        <a class="twittericon" title="Twitter" href="#"><i class="fab fa-twitter"></i> <span class="mobiletext02">Twitter</span></a>
                   <a class="facebookicon" title="Facebook" href="#"><i class="fab fa-facebook-f"></i> <span class="mobiletext02">Facebook</span></a>
-                  <span><?php echo strtoupper($user) ?></span>
 				      	</div>
 
 				    </div>
@@ -99,18 +98,21 @@
     					<div class="desktoplogo"><a href="#hero-1"><img src="images/images-logo-grey.png" width="180" height="40" alt="header-logo"></a></div>
 
     					<!-- MAIN MENU -->
-      					<nav class="wsmenu clearfix"><ul class="wsmenu-list">
-                  <li class="nl-simple" aria-haspopup="true"><a href="index.php">Home</a></li>
-                  <li class="nl-simple" aria-haspopup="true"><a href="camps.php">Camps</a></li>
-                  <li class="nl-simple" aria-haspopup="true"><a href="contact.php">Contact</a></li>
-                  <li class="nl-simple" aria-haspopup="true"><a href="">About</a></li>
-                  <li class="nl-simple" aria-haspopup="true"><a href="profile.php">Profile</a></li>
-
-							    <!-- NAVIGATION MENU BUTTON -->
-							    <li class="nl-simple header-btn" aria-haspopup="true"><a href="Request.php">Make a Request</a></li>
-
-
-        					</ul></nav><!-- END MAIN MENU --></div>
+      					<nav class="wsmenu clearfix">
+							<ul class="wsmenu-list">
+                  				<li class="nl-simple" aria-haspopup="true"><a href="index.php">Home</a></li>
+                  				<li class="nl-simple" aria-haspopup="true"><a href="camps.php">Camps</a></li>
+                  				<li class="nl-simple" aria-haspopup="true"><a href="contact.php">Contact Us</a></li>
+								<li aria-haspopup="true"><a href="#"><i class="fa fa-user" aria-hidden="true"></i><?php echo strtoupper($user) ?> <span class="wsarrow"></span></a>
+					           		<ul class="sub-menu">
+					              		<li aria-haspopup="true"><a href="profile.php">Profile</a></li>
+					              		<li aria-haspopup="true"><a href="logout.php">Logout</a></li>
+					           		</ul>
+					          	</li>
+								<li class="nl-simple header-btn" aria-haspopup="true"><a href="Request.php">Make a Request</a></li>
+        					</ul>
+						</nav><!-- END MAIN MENU -->
+					</div>
     			</div>	<!-- END NAVIGATION MENU -->
 
 
