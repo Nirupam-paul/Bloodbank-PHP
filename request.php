@@ -44,7 +44,7 @@ include('header.php');
                                 <form method="POST">
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
-                                            <label class="input-group-text" for="inputGroupSelect01">BloodGroup</label>
+                                            <label class="input-group-text bg-blue white-color" for="inputGroupSelect01">BloodGroup</label>
                                         </div>
                                         <select class="custom-select" id="inputGroupSelect01" name="bggroup">
                                             <option selected>A+</option>
@@ -59,18 +59,18 @@ include('header.php');
                                     </div>
                                     <div class="input-group mb-3" style="padding-top: 15px;">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon1">Date</span>
+                                        <span class="input-group-text bg-blue white-color" id="basic-addon1">Date</span>
                                     </div>
                                     <input type="date" class="form-control"  aria-label="Username" aria-describedby="basic-addon1" name="reqdate">
                                     </div>
                                     <div class="input-group" style="padding-top: 15px;">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text">Enter Details</span>
+                                        <span class="input-group-text bg-blue white-color">Enter Details</span>
                                     </div>
                                     <textarea class="form-control" aria-label="With textarea" name="detail"></textarea>
                                     </div>
                                     <div class="text-center" style="padding-top: 30px;">
-                                        <button type="submit" class="btn btn-blue blue-hover submit" name="request_submit" style="margin: 10px; width: 30%;" >Submit</button>
+                                        <button type="submit" class="btn btn-orange btn-sm btn-tra-black blue-hover" name="request_submit" style="margin: 10px; width: 30%;" >Submit</button>
                                     </div>
                                 </form>
 								</div>					 				
