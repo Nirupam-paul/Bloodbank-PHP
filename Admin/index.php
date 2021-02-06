@@ -238,7 +238,7 @@ $res_camps_count = mysqli_num_rows($res_camps);
 								
 									<!-- Icon  -->
 									<div class="sbox-2-icon icon-xl">
-										<span class="flaticon-094-blood-drop-1"></span><h5 class="h5-sm steelblue-color" style=" margin-top: -50px;">O-</h5>
+										<span class="flaticon-094-blood-drop-1"></span><h5 class="h5-sm steelblue-color " style=" margin-top: -50px; hover{color:white;}">O-</h5>
 									</div>
 									<!-- Title -->
                                     <h5 class="statistic-number h5-sm sbox-2-title steelblue-color " style="margin-top: 50px;"><span class="count-element"><?php echo $row_bg_group['O-'] ?></span></h5>

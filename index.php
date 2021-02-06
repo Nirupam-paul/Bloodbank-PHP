@@ -31,89 +31,14 @@ $res_blood_dona_count = mysqli_num_rows($res_blood_dona);
                 <!-- HERO TEXT -->
                 <div class="col-md-10 col-lg-9 col-xl-8">
                     <div class="hero-txt mb-40">
-                        <h2 class="steelblue-color" style="color:darkred;" >COSTS NOTHING, SAVES LIFE</h2>
-                        <h4 class="steelblue-color" >DONAR OF TODAY MAY RECIPIENTS OF TOMORROW </h4>		
+                        <h2 class="steelblue-color" style="color:#B02320;" >COSTS NOTHING, SAVES LIFE</h2>
+                        <h4 class="steelblue-color" style="color:#B02320;">DONAR OF TODAY MAY RECIPIENTS OF TOMORROW </h4>		
                     </div>
                 </div>	<!-- END HERO TEXT -->
-                <!-- HERO IMAGE -->
-                <!-- <div class="col-md-4 col-lg-5 col-xl-6">	
-                    <div class="hero-1-img text-center">				
-                        <img class="img-fluid mb-5" src="images/blood-donation-logo.png" alt="hero-image">
-                    </div>
-                </div> -->
+                
             </div>    <!-- End row -->
         </div>     <!-- End container -->
     </section><!-- END HERO-1 -->
-
-    
-    <!-- <section id="about-1" class="about-section division">
-        <div class="container">
-            <div class="row d-flex align-items-center">
-                <div id="abox-1" class="col-md-6 col-lg-3">
-                    <div class="abox-1 white-color">
-                        
-                        <h5 class="h5-md">Working Time</h5>
-                        
-                        <table class="table white-color"><tbody><tr><td>Mon &ndash; Wed</td>
-                                    <td> - </td>
-                                    <td class="text-right">9:00 AM - 7:00 PM</td>
-                                </tr><tr><td>Thursday</td>
-                                    <td> - </td>
-                                    <td class="text-right">9:00 AM - 6:30 PM</td>
-                                </tr><tr><td>Friday</td>
-                                    <td> - </td>
-                                    <td class="text-right">9:00 AM - 6:00 PM</td>
-                                </tr><tr class="last-tr"><td>Sun - Sun</td>
-                                    <td>-</td>
-                                    <td class="text-right">CLOSED</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            <div id="abox-2" class="col-md-6 col-lg-3">
-                <div class="abox-1 white-color">
-                    <h5 class="h5-md">24 Hour Service</h5>
-                    
-                    <h6 class="h6-md">HIGHEST QUALITY CARE</h6>
-                    <br>
-                    <p>An magnis nulla dolor at sapien augue erat iaculis purus tempor magna ipsum and
-                    vitae a purus primis ipsum magna ipsum
-                    </p>
-                    
-                </div>
-            </div>
-            
-            <div id="abox-3" class="col-md-6 col-lg-3">
-                <div class="abox-1 white-color">
-                    
-                    <h5 class="h5-md">Qualified Doctors</h5>
-                    
-                    <h6 class="h6-md">WHERE PEOPLE COME FIRST</h6>
-                    <br>
-                    <p>An magnis nulla dolor at sapien augue erat iaculis purus tempor magna ipsum and
-                    vitae a purus primis ipsum magna ipsum
-                    </p>
-                    
-                </div>
-            </div>
-            
-            <div id="abox-4" class="col-md-6 col-lg-3">
-                <div class="abox-1 white-color">
-                    
-                    <h5 class="h5-md">Emergency Cases</h5>
-                    
-                    <h5 class="h5-lg emergency-call"><i class="fas fa-phone"></i> 1-800-123-4560</h5>
-                    <p class="mt-20">An magnis nulla dolor sapien augue erat iaculis purus tempor magna ipsum and
-                    vitae a purus primis ipsum magna ipsum
-                    </p>
-                </div>
-            </div>
-            </div>    
-        </div>	   	
-    </section> -->
-
-
 
 <section id="about-5" class="pt-100 about-section division">
     <div class="container">
@@ -122,29 +47,18 @@ $res_blood_dona_count = mysqli_num_rows($res_blood_dona);
                 <div class="about-img text-center wow fadeInUp" data-wow-delay="0.6s">
                     <img class="img-fluid" src="images/images-image-02.png" alt="about-image">
                 </div>
-                
-</div>
-
-
-<!-- TEXT BLOCK -->	
-<div class="col-lg-6">
-    <div class="txt-block pc-30 wow fadeInUp" data-wow-delay="0.4s">
-
-        <!-- Section ID -->	
-         <span class="section-id blue-color">Welcome to MedService</span>
-
-        <!-- Text -->
-        <p style="text-align: justify;">Blood is universally recognized as the most precious element that sustains life. It saves innumerable lives across the world in a variety of conditions. The need for blood is great - on any given day, approximately 39,000 units of Red Blood Cells are needed. More than 29 million units of blood components are transfused every year.</p>
-
-        <p style="text-align: justify;">Donate Blood <br>
-        Despite the increase in the number of donors, blood remains in short supply during emergencies, mainly attributed to the lack of information and accessibility.<br>	We positively believe this tool can overcome most of these challenges by effectively connecting the blood donors with the blood recipients.
-        </p>
-    </div>
-</div>	<!-- END TEXT BLOCK -->	
-
-
-</div>    <!-- End row -->
-</div>	   <!-- End container -->
+            </div>
+            <div class="col-lg-6">
+                <div class="txt-block pc-30 wow fadeInUp" data-wow-delay="0.4s">
+                    <span class="section-id blue-color">Welcome to Life Saver</span>
+                    <p style="text-align: justify;">Blood is universally recognized as the most precious element that sustains life. It saves innumerable lives across the world in a variety of conditions. The need for blood is great - on any given day, approximately 39,000 units of Red Blood Cells are needed. More than 29 million units of blood components are transfused every year.</p>
+                    <p style="text-align: justify;">Donate Blood <br>
+                        Despite the increase in the number of donors, blood remains in short supply during emergencies, mainly attributed to the lack of information and accessibility.<br>	We positively believe this tool can overcome most of these challenges by effectively connecting the blood donors with the blood recipients.
+                    </p>
+                </div>
+            </div>	<!-- END TEXT BLOCK -->	
+        </div>    <!-- End row -->
+    </div>	   <!-- End container -->
 </section><!-- END ABOUT-5 -->
 
 
