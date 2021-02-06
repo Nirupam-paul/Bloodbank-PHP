@@ -245,7 +245,8 @@ $res_blood_dona_count = mysqli_num_rows($res_blood_dona);
     
 
 
-    <section id="blog-1" class="wide-60 blog-section division"><div class="container">
+    <section id="blog-1" class="wide-60 blog-section division" style="background-color: #DBF1FF; margin-bottom: -50px;">
+    <div class="container">
 
 
 <!-- SECTION TITLE -->	
