@@ -93,10 +93,10 @@
 		<script src="js/jquery.magnific-popup.min.js"></script>	
 		<script src="js/imagesloaded.pkgd.min.js"></script>
 		<script src="js/isotope.pkgd.min.js"></script>
-		<script src="js/hero-form.js"></script>
+		<!-- <script src="js/hero-form.js"></script>
 		<script src="js/contact-form.js"></script>
 		<script src="js/comment-form.js"></script>
-		<script src="js/appointment-form.js"></script>
+		<script src="js/appointment-form.js"></script> -->
 		<script src="js/jquery.datetimepicker.full.js"></script>		
 		<script src="js/jquery.validate.min.js"></script>	
 		<script src="js/jquery.ajaxchimp.min.js"></script>

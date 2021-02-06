@@ -29,40 +29,31 @@ $res_blood_dona_count = mysqli_num_rows($res_blood_dona);
         <div class="container">						
             <div class="row d-flex align-items-center">
                 <!-- HERO TEXT -->
-                <div class="col-md-8 col-lg-7 col-xl-6">
+                <div class="col-md-10 col-lg-9 col-xl-8">
                     <div class="hero-txt mb-40">
-                        <!-- Title -->
-                        <h5 class="steelblue-color">Welcome To Our Clinic</h5>
-                        <h2 class="steelblue-color">Take Care of Your Health</h2>
-                        <!-- Text -->
-                        <p class="p-md">Feugiat primis ligula risus auctor egestas augue mauri viverra tortor in
-                        iaculis placerat eugiat mauris ipsum in viverra tortor and gravida purus pretium lorem 
-                        primis in orci integer mollis
-                        </p>
-                        <!-- Button -->
-                        <a href="about-us.html" class="btn btn-blue blue-hover">More About Clinic</a>		
+                        <h2 class="steelblue-color" style="color:darkred;" >COSTS NOTHING, SAVES LIFE</h2>
+                        <h4 class="steelblue-color" >DONAR OF TODAY MAY RECIPIENTS OF TOMORROW </h4>		
                     </div>
                 </div>	<!-- END HERO TEXT -->
                 <!-- HERO IMAGE -->
-                <div class="col-md-4 col-lg-5 col-xl-6">	
+                <!-- <div class="col-md-4 col-lg-5 col-xl-6">	
                     <div class="hero-1-img text-center">				
-                        <img class="img-fluid" src="images/images-hero-1-img.png" alt="hero-image">
+                        <img class="img-fluid mb-5" src="images/blood-donation-logo.png" alt="hero-image">
                     </div>
-                </div>
+                </div> -->
             </div>    <!-- End row -->
         </div>     <!-- End container -->
     </section><!-- END HERO-1 -->
 
-    <!-- ABOUT-1============================================= -->
-    <section id="about-1" class="about-section division">
+    
+    <!-- <section id="about-1" class="about-section division">
         <div class="container">
             <div class="row d-flex align-items-center">
-            <!-- ABOUT BOX #1 -->
                 <div id="abox-1" class="col-md-6 col-lg-3">
                     <div class="abox-1 white-color">
-                        <!-- Title -->
+                        
                         <h5 class="h5-md">Working Time</h5>
-                        <!-- Table -->
+                        
                         <table class="table white-color"><tbody><tr><td>Mon &ndash; Wed</td>
                                     <td> - </td>
                                     <td class="text-right">9:00 AM - 7:00 PM</td>
@@ -80,11 +71,10 @@ $res_blood_dona_count = mysqli_num_rows($res_blood_dona);
                         </table>
                     </div>
                 </div>
-            <!-- ABOUT BOX #2 -->
             <div id="abox-2" class="col-md-6 col-lg-3">
                 <div class="abox-1 white-color">
                     <h5 class="h5-md">24 Hour Service</h5>
-                    <!-- Text -->
+                    
                     <h6 class="h6-md">HIGHEST QUALITY CARE</h6>
                     <br>
                     <p>An magnis nulla dolor at sapien augue erat iaculis purus tempor magna ipsum and
@@ -93,13 +83,12 @@ $res_blood_dona_count = mysqli_num_rows($res_blood_dona);
                     
                 </div>
             </div>
-
-            <!-- ABOUT BOX #3 -->
+            
             <div id="abox-3" class="col-md-6 col-lg-3">
                 <div class="abox-1 white-color">
-                    <!-- Title -->
+                    
                     <h5 class="h5-md">Qualified Doctors</h5>
-                    <!-- Text -->
+                    
                     <h6 class="h6-md">WHERE PEOPLE COME FIRST</h6>
                     <br>
                     <p>An magnis nulla dolor at sapien augue erat iaculis purus tempor magna ipsum and
@@ -108,21 +97,21 @@ $res_blood_dona_count = mysqli_num_rows($res_blood_dona);
                     
                 </div>
             </div>
-            <!-- ABOUT BOX #4 -->
+            
             <div id="abox-4" class="col-md-6 col-lg-3">
                 <div class="abox-1 white-color">
-                    <!-- Title -->
+                    
                     <h5 class="h5-md">Emergency Cases</h5>
-                    <!-- Text -->
+                    
                     <h5 class="h5-lg emergency-call"><i class="fas fa-phone"></i> 1-800-123-4560</h5>
                     <p class="mt-20">An magnis nulla dolor sapien augue erat iaculis purus tempor magna ipsum and
                     vitae a purus primis ipsum magna ipsum
                     </p>
                 </div>
             </div>
-        </div>    <!-- End row -->
-    </div>	   <!-- End container -->	
-</section><!-- END ABOUT-1 -->
+            </div>    
+        </div>	   	
+    </section> -->
 
 
 
@@ -222,22 +211,42 @@ $res_blood_dona_count = mysqli_num_rows($res_blood_dona);
 		<div class="row gallery-items-list">		
 			<div class="col-md-6 col-lg-3 gallery-item">
 				<div class="hover-overlay"> 
-					<img class="img-fluid" src="images/gallery-image-1.jpg" alt="gallery-image">			
+					<img class="img-fluid" src="images/donar-1.jpeg" alt="gallery-image">			
 				</div>
 			</div>
             <div class="col-md-6 col-lg-3 gallery-item">
 				<div class="hover-overlay"> 
-					<img class="img-fluid" src="images/gallery-image-2.jpg" alt="gallery-image">			
+					<img class="img-fluid" src="images/donar-2.jpeg" alt="gallery-image">			
 				</div>
 			</div>
             <div class="col-md-6 col-lg-3 gallery-item">
 				<div class="hover-overlay"> 
-					<img class="img-fluid" src="images/gallery-image-3.jpg" alt="gallery-image">			
+					<img class="img-fluid" src="images/donar-3.jpeg" alt="gallery-image">			
 				</div>
 			</div>
             <div class="col-md-6 col-lg-3 gallery-item">
 				<div class="hover-overlay"> 
-					<img class="img-fluid" src="images/gallery-image-4.jpg" alt="gallery-image">			
+					<img class="img-fluid" src="images/donar-5.jpeg" alt="gallery-image">			
+				</div>
+			</div>
+            <div class="col-md-6 col-lg-3 gallery-item">
+				<div class="hover-overlay"> 
+					<img class="img-fluid" src="images/donar-4.jpeg" alt="gallery-image">			
+				</div>
+			</div>
+            <div class="col-md-6 col-lg-3 gallery-item">
+				<div class="hover-overlay"> 
+					<img class="img-fluid" src="images/donar-6.jpeg" alt="gallery-image">			
+				</div>
+			</div>
+            <div class="col-md-6 col-lg-3 gallery-item">
+				<div class="hover-overlay"> 
+					<img class="img-fluid" src="images/donar-7.jpeg" alt="gallery-image">			
+				</div>
+			</div>
+            <div class="col-md-6 col-lg-3 gallery-item">
+				<div class="hover-overlay"> 
+					<img class="img-fluid" src="images/donar-8.jpeg" alt="gallery-image">			
 				</div>
 			</div>
 		</div> 
@@ -277,7 +286,11 @@ $res_blood_dona_count = mysqli_num_rows($res_blood_dona);
                 <span>May 03, 2019</span>
 
                 <!-- Post Text -->
-                <p>GUWAHATI: With Guwahati witnessing sharp increase COVID-19 cases, collection of blood plasma from patients who have been cured of COVID 19 have started at the Guwahati Medical College and hospital (GMCH).The first plasma donor is a doctor of GMCH. Assam health minister, Himanta Biswa Sarma tweeted, “Glad to share that we've started a #PlasmaBank at GMCH. The first convalescent donor is a doctor himself, a #COVID19 patient. My gratitude to Dr Lithikesh for donating his plasma, and to the team who is working on this bank. I encourage cured patients to come forward & donate.”
+                <p> The first plasma donor is a doctor of GMCH. Assam health minister, Himanta Biswa Sarma tweeted, 
+                    “Glad to share that we've started a #PlasmaBank at GMCH. 
+                    The first convalescent donor is a doctor himself, a #COVID19 patient. 
+                    My gratitude to Dr Lithikesh for donating his plasma, and to the team who is working on this bank. 
+                    I encourage cured patients to come forward & donate.”
                 </p>
 
             </div>
