@@ -29,16 +29,20 @@ $res_blood_dona_count = mysqli_num_rows($res_blood_dona);
         <div class="container">						
             <div class="row d-flex align-items-center">
                 <!-- HERO TEXT -->
-                <div class="col-md-10 col-lg-9 col-xl-8">
+                <div class="col-md-8 col-lg-7 col-xl-6">
                     <div class="hero-txt mb-40">
-                        <h2 class="steelblue-color" style="color:#B02320;" >COSTS NOTHING, SAVES LIFE</h2>
-                        <h4 class="steelblue-color" style="color:#B02320;">DONAR OF TODAY MAY RECIPIENTS OF TOMORROW </h4>		
+                        <h3 class="h3-sm steelblue-color"  >COSTS NOTHING, SAVES LIFE</h3>
+                        <h4 class="steelblue-color mt-4" >DONAR OF TODAY MAY RECIPIENTS OF TOMORROW </h4>		
                     </div>
-                </div>	<!-- END HERO TEXT -->
-                
-            </div>    <!-- End row -->
-        </div>     <!-- End container -->
-    </section><!-- END HERO-1 -->
+                </div>
+                <div class="col-md-4 col-lg-5 col-xl-6">	
+					<div class="hero-1-img text-center">				
+						<img class="img-fluid" src="images/blood-donor-logo1.png" alt="hero-image">
+                    </div>
+				</div>
+            </div>    
+        </div>     
+    </section>
 
 <section id="about-5" class="pt-100 about-section division">
     <div class="container">
@@ -56,7 +60,8 @@ $res_blood_dona_count = mysqli_num_rows($res_blood_dona);
                         Despite the increase in the number of donors, blood remains in short supply during emergencies, mainly attributed to the lack of information and accessibility.<br>	We positively believe this tool can overcome most of these challenges by effectively connecting the blood donors with the blood recipients.
                     </p>
                 </div>
-            </div>	<!-- END TEXT BLOCK -->	
+            </div>
+            	<!-- END TEXT BLOCK -->	
         </div>    <!-- End row -->
     </div>	   <!-- End container -->
 </section><!-- END ABOUT-5 -->
@@ -188,7 +193,7 @@ $res_blood_dona_count = mysqli_num_rows($res_blood_dona);
 
              <!-- BLOG POST IMAGE -->
              <div class="blog-post-img">
-                <img class="img-fluid" src="images/blog-post-1-img.jpg" alt="blog-post-image"></div>
+                <img class="img-fluid" src="images/news-5.jpg" alt="blog-post-image"></div>
 
              <!-- BLOG POST TITLE -->
             <div class="blog-post-txt">
@@ -219,7 +224,7 @@ $res_blood_dona_count = mysqli_num_rows($res_blood_dona);
 
              <!-- BLOG POST IMAGE -->
              <div class="blog-post-img">
-                <img class="img-fluid" src="images/blog-post-2-img.jpg" alt="blog-post-image"></div>
+                <img class="img-fluid" src="images/news-2.jpg" alt="blog-post-image"></div>
 
              <!-- BLOG POST TEXT -->
             <div class="blog-post-txt">
@@ -246,7 +251,7 @@ $res_blood_dona_count = mysqli_num_rows($res_blood_dona);
 
              <!-- BLOG POST IMAGE -->
              <div class="blog-post-img">
-                <img class="img-fluid" src="images/blog-post-3-img.jpg" alt="blog-post-image"></div>
+                <img class="img-fluid" src="images/news-4.jpg" alt="blog-post-image"></div>
 
              <!-- BLOG POST TEXT -->
             <div class="blog-post-txt">

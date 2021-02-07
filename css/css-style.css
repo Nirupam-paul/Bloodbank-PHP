@@ -1715,10 +1715,8 @@ p.header-widget-phone {
 }
 
 #hero-1 {
-  background-image: url(../images/banner.jpg);
-  background-size: 100%;
-  padding-top: 120px;
-  padding-bottom: 140px;
+  background-image: url(../images/images-hero-1.jpg);
+  padding-top: 30px;
 }
 
 #hero-4 {

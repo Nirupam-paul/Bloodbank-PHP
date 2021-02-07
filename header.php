@@ -8,7 +8,7 @@
 		<meta name="keywords" content="Responsive, HTML5 Template, Jthemes, One Page, Landing, Medical, Health, Healthcare, Doctor, Clinic, Care, Hospital">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- SITE TITLE -->
-		<title>MedService - Medical &amp; Medical Health Landing Page Template</title>
+		<title>Blood Bank</title>
 		<!-- FAVICON AND TOUCH ICONS  -->
 		<link rel="shortcut icon" href="favicons/9816-images-favicon.ico" type="image/x-icon">
 		<link rel="icon" href="favicons/5557-images-favicon.ico" type="image/x-icon">
@@ -31,7 +31,8 @@
 		<link href="css/css-owl.theme.default.min.css" rel="stylesheet">
 		<link href="css/css-animate.css" rel="stylesheet"><link href="css/css-jquery.datetimepicker.min.css" rel="stylesheet">
 		<!-- TEMPLATE CSS -->
-		<link href="css/css-style.css" rel="stylesheet"><!-- RESPONSIVE CSS --><link href="css/css-responsive.css" rel="stylesheet">
+		<link href="css/css-style.css" rel="stylesheet"><!-- RESPONSIVE CSS -->
+    <link href="css/css-responsive.css" rel="stylesheet">
 	</head>
 	<body>
 
@@ -62,7 +63,7 @@
 			
         <div class="wsmobileheader clearfix">
               <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
-              <span class="smllogo"><img src="images/logo-grey.png" width="180" height="40" alt="mobile-logo"/></span>
+              <span class="smllogo"><img src="images/logo.png" width="180" height="40" alt="mobile-logo"/></span>
               <a href="tel:123456789" class="callusbtn"><i class="fas fa-phone"></i></a>
         </div>
 
@@ -96,7 +97,7 @@
                 <!-- LOGO IMAGE -->
                 <!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 360 x 80 pixels) -->
                 <div class="desktoplogo">
-                  <a href="index.php"><img src="images/logo-grey.png" width="180" height="40" alt="header-logo"></a>
+                  <a href="index.php"><img src="images/logo.png" width="180" height="40" alt="header-logo"></a>
                 </div>
 
                 <!-- MAIN MENU -->
