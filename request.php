@@ -34,7 +34,7 @@ $bg_stock_row = mysqli_fetch_assoc(mysqli_query($con,"SELECT * FROM blood_stock"
 
 
 			<!-- SERVICE DETAILS -->
-			<div class="col-lg-8">
+			<div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1">
 				<div class="txt-block pr-30">
 
 					<!-- Title -->
@@ -78,41 +78,6 @@ $bg_stock_row = mysqli_fetch_assoc(mysqli_query($con,"SELECT * FROM blood_stock"
 					</div>
 				</div>
 			</div> <!-- END SERVICE DETAILS -->
-
-
-			<!-- SIDEBAR -->
-			<aside id="sidebar" class="col-lg-4">
-
-
-				<!-- TEXT WIDGET -->
-				<div id="txt-widget" class="sidebar-div mb-50">
-
-					<!-- Title -->
-					<h5 class="h5-sm steelblue-color">The Heart Of Clinic</h5>
-
-					<!-- Head of Clinic -->
-					<div class="txt-widget-unit mb-15 clearfix d-flex align-items-center">
-
-						<!-- Avatar -->
-						<div class="txt-widget-avatar">
-							<img src="images/head-of-clinic.jpg" alt="testimonial-avatar">
-						</div>
-
-						<!-- Data -->
-						<div class="txt-widget-data">
-							<h5 class="h5-md steelblue-color">Dr. Jonathan Barnes</h5>
-							<span>Chief Medical Officer, Founder</span>
-							<p class="blue-color">1-800-1234-567</p>
-						</div>
-
-					</div>
-					<p class="p-sm">An enim nullam tempor sapien at gravida donec pretium ipsum porta justo
-						integer at odiovelna vitae auctor integer congue magna purus
-					</p>
-					<a href="about.html" class="btn btn-blue blue-hover">Learn More</a>
-
-				</div>
-			</aside>
 		</div> <!-- End row -->
 	</div> <!-- End container -->
 </div>

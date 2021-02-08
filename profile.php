@@ -163,7 +163,7 @@ if (isset($_POST['submit_delete'])) {
     
         <div class="row">
             <!-- My Pending Request -->
-            <div class="col-md-6 col-lg-6">
+            <div class="col-md-10 col-lg-10">
                 <div class="doctor-bio">
                     <h5 class="h5-md steelblue-color">My Pending Request</h5>
                     <div class="pricing-table mb-40">
@@ -175,6 +175,7 @@ if (isset($_POST['submit_delete'])) {
                                         <th scope="col">Requested BG</th>
                                         <th scope="col">Request Date</th>
                                         <th scope="col">Detail</th>
+                                        <th scope="col">Status</th>
                                         <th scope="col">Delete</th>
                                     </tr>
                                 </thead>
@@ -187,6 +188,7 @@ if (isset($_POST['submit_delete'])) {
                                             <td><?php echo $row_pending['bloodgroup'] ?></td>
                                             <td><?php echo $row_pending['requireddate'] ?></td>
                                             <td><?php echo $row_pending['details'] ?></td>
+                                            <td><?php echo $row_pending['Status']?></td>
                                             <td>
                                             <form method="POST">
                                                 <button type="submit" name="submit_delete" value="<?php echo $row_pending['req_id'] ?>" class="btn btn-danger btn-sm" style="background-color:red;">Delete Request</button>
@@ -210,9 +212,10 @@ if (isset($_POST['submit_delete'])) {
                     </div>
                 </div>
             </div> <!-- END My Pending Request -->
-
+        </div>
+        <div class="row">
             <!-- My Processing Request -->
-            <div class="col-md-6 col-lg-6">
+            <div class="col-md-10 col-lg-10">
                 <div class="doctor-bio">
                     <h5 class="h5-md steelblue-color">My Processing Request</h5>
                     <div class="pricing-table mb-40">

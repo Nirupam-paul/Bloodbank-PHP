@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 08, 2021 at 05:39 AM
+-- Generation Time: Feb 08, 2021 at 04:07 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.2.31
 
@@ -39,7 +39,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `name`, `phone`, `password`) VALUES
-(1, 'Nirupam', '11111', '1235');
+(1, 'Admin', '11111', '12345');
 
 -- --------------------------------------------------------
 
@@ -63,7 +63,7 @@ CREATE TABLE `blood_stock` (
 --
 
 INSERT INTO `blood_stock` (`A+`, `A-`, `B+`, `B-`, `AB+`, `AB-`, `O+`, `O-`) VALUES
-(0, 0, 1, 1, 0, 3, 3, 1);
+(0, 0, 1, 1, 1, 4, 4, 2);
 
 -- --------------------------------------------------------
 
@@ -88,12 +88,10 @@ CREATE TABLE `camps` (
 --
 
 INSERT INTO `camps` (`camp_id`, `camp_title`, `organized_by`, `state`, `city`, `image`, `details`, `from_date`, `to_date`) VALUES
-(1, 'GIMT', 'GIMT groups', 'Assam', 'Guwahati', '', 'abc', '2021-02-01', '2021-03-01'),
-(2, 'Saving Lives', 'GIMT groups', 'Assam', 'Guwahati', '', '', '2020-12-30', '2021-01-02'),
-(3, 'Donate blood', 'ASTU', 'Assam', 'Guwahati', '', '', '2020-12-27', '2020-12-30'),
-(4, 'Awareness Program', 'GIPS', 'Assam', 'Guwahati', '', '', '2021-01-14', '2021-01-15'),
-(5, 'Life Saver', 'GCC ', 'Assam', 'Guwahati', '', '', '2021-01-14', '2021-01-16'),
-(6, 'Tridip', 'Kalita', 'Assam', 'Guwahati', 'Espresso(coffee).jpg', 'Hello', '2021-02-06', '2021-02-27');
+(8, 'DROPS OF HOPE', 'LIFE SAVER', 'Assam', 'Guwahati', 'camp-2.jpg', 'Every blood donor is a life saver', '2021-02-08', '2021-02-28'),
+(9, 'GIVE LIFE', 'NSS', 'Assam', 'Jorhat', 'camp-1.jpg', 'Don’t let fools or mosquitoes suck your blood, put it to good use. Donate blood and save a life.', '2021-02-01', '2021-04-25'),
+(10, 'GIVE AND LET LIVE', 'AZARA HOSPITAL', 'Assam', 'Guwahati', 'camp-3.jpg', 'Donate your blood for a reason, let the reason to be life', '2020-12-01', '2021-04-01'),
+(11, 'DONATE BECAUSE YOU CAN', 'VIJAI LAKSHMI HOSPITAL', 'Assam', 'Morigaon', 'camp-4.jpg', 'Sometimes money cannot save life but donated blood can!', '2021-10-11', '2022-01-01');
 
 -- --------------------------------------------------------
 
@@ -116,7 +114,8 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`contact_id`, `name`, `phone`, `subject`, `description`, `email`, `status`) VALUES
-(4, 'Tridip Kalita', '8486122605', 'Hello', 'Help', 'tridipkalita100@gmai', 'Contact Successful');
+(5, 'Contact1', '1234567890', 'Need Blood', 'Urgent', 'contact1@gmail.com', 'Pending'),
+(6, 'Contact2', '1234567891', 'Blood Needed', 'Emergency', 'contact2@gmail.com', 'Contact Successful');
 
 -- --------------------------------------------------------
 
@@ -138,11 +137,14 @@ CREATE TABLE `donation` (
 --
 
 INSERT INTO `donation` (`donar_id`, `name`, `phone`, `email`, `bloodgroup`, `camp`) VALUES
-(4, 'Zahid', '7002595243', 'nirupam17paul@gmail.com', 'O+', 'GIMT'),
-(5, 'Tridip', '8011102472', 'tridip@gmail.com', 'B+', 'Donate blood'),
-(6, 'Rahul', '7002595243', 'nirupam17paul@gmail.com', 'O+', 'Donate blood'),
-(7, 'Nirupam ', '7002595243', 'nirupam17paul@gmail.com', 'O+', 'GIMT'),
-(8, 'Rahul', '7002595243', 'nirupam17paul@gmail.com', 'O-', 'Life Saver');
+(9, 'Donor1', '1234567890', 'donor1@gmail.com', 'A+', 'DROPS OF HOPE'),
+(10, 'Donor2', '1234567891', 'donor2@gmail.com', 'A-', 'DROPS OF HOPE'),
+(11, 'Donor3', '1234567892', 'donor3@gmail.com', 'B+', 'GIVE LIFE'),
+(12, 'Donor4', '1234567894', 'donor4@gmail.com', 'B-', 'GIVE LIFE'),
+(13, 'Donor5', '1234567894', 'donor5@gmail.com', 'AB+', 'GIVE AND LET LIVE'),
+(14, 'Donor6', '1234567895', 'donor6@gmail.com', 'AB-', 'GIVE AND LET LIVE'),
+(15, 'Donor7', '1234567896', 'donor7@gmail.com', 'O+', 'DONATE BECAUSE YOU CAN'),
+(16, 'Donor8', '1234567897', 'donor8@gmail.com', 'O-', 'DONATE BECAUSE YOU CAN');
 
 -- --------------------------------------------------------
 
@@ -169,10 +171,9 @@ CREATE TABLE `employee` (
 --
 
 INSERT INTO `employee` (`emp_id`, `name`, `age`, `gender`, `bg`, `phone`, `email`, `j_date`, `designation`, `salary`, `password`) VALUES
-(5, 'Nirupam', 20, 'Male', 'O+', '8011102472', 'nirupam17paul@gmail.com', '2020-12-18', 'Request Management', 10000, '5555'),
-(6, 'Tridip', 20, 'Male', 'A+', '9954962052', 'tridip@gmail.com', '2020-12-20', 'Donar Management', 45000, '3333'),
-(7, 'Zahid Mansur ', 21, 'Male', 'AB+', '9954632578', 'zahid@gmail.com', '2020-12-24', 'Contact Management', 40000, '4444'),
-(8, 'Zahid Mansur ', 21, 'Male', 'AB+', '9954632578', 'zahid@gmail.com', '2020-12-24', 'Contact Management', 40000, '4444');
+(5, 'Nirupam Paul', 20, 'Male', 'O+', '8011102472', 'nirupam17paul@gmail.com', '2020-12-18', 'Request Management', 10000, '5555'),
+(6, 'Tridip Kalita', 20, 'Male', 'A+', '9954962052', 'tridip@gmail.com', '2020-12-20', 'Donar Management', 45000, '3333'),
+(7, 'Zahid Mansur ', 21, 'Male', 'AB+', '9954632578', 'zahid@gmail.com', '2020-12-24', 'Contact Management', 40000, '4444');
 
 -- --------------------------------------------------------
 
@@ -186,7 +187,7 @@ CREATE TABLE `registration` (
   `Age` int(3) NOT NULL,
   `Gender` varchar(1) NOT NULL,
   `Phone` varchar(15) NOT NULL,
-  `profile_pic` varchar(40) NOT NULL DEFAULT 'default_pic.jpg',
+  `profile_pic` varchar(100) NOT NULL DEFAULT 'default_pic.jpg',
   `email` varchar(50) NOT NULL,
   `blood_group` varchar(4) NOT NULL,
   `password` varchar(128) NOT NULL
@@ -197,8 +198,9 @@ CREATE TABLE `registration` (
 --
 
 INSERT INTO `registration` (`id`, `Name`, `Age`, `Gender`, `Phone`, `profile_pic`, `email`, `blood_group`, `password`) VALUES
-(12, 'Tridip Kalita', 25, 'M', '8486122605', 'default_pic.jpg', 'tridipkalita100@gmail.com', 'A+', '12345'),
-(18, 'Bubul Kalita', 26, 'M', '9085602126', 'default_pic.jpg', 'bubulfakekalita100@gmail.com', 'B+', '12345');
+(22, 'Register1', 20, 'M', '1234567890', '1234567890_reg1.jpg', 'register1@gmail.com', 'A+', '12345'),
+(24, 'Register2', 22, 'F', '1234567891', '1234567891_reg2.jpg', 'register2@gmail.com', 'B+', '12345'),
+(25, 'Register3', 24, 'M', '1234567892', '1234567892_reg3.jpg', 'register3@gmail.com', 'AB+', '12345');
 
 -- --------------------------------------------------------
 
@@ -224,17 +226,11 @@ CREATE TABLE `request` (
 --
 
 INSERT INTO `request` (`req_id`, `name`, `age`, `gender`, `mobile`, `email`, `bloodgroup`, `requireddate`, `details`, `Status`) VALUES
-(6, 'Nirupam', 20, 'M', '7002595243', 'nirupam17paul@gmail.com', 'O+', '2020-11-03', 'fuftyyf', 'Processing'),
-(7, 'Nirupam', 20, 'M', '7002595243', 'nirupam17paul@gmail.com', 'O+', '2020-12-03', 'zdsgdhga', 'Accepted'),
-(9, 'Nirupam', 20, 'M', '7002595243', 'nirupam17paul@gmail.com', 'A+', '2020-12-23', 'Hello', 'Accepted'),
-(10, 'Nirupam', 20, 'M', '7002595243', 'nirupam17paul@gmail.com', 'AB+', '2020-12-31', 'I urgently need bool for surgery', 'Accepted'),
-(11, 'paul', 23, 'M', '8011102472', 'paul@gmail.com', 'O+', '2021-01-01', 'abc', 'Accepted'),
-(12, 'Nirupam', 20, 'M', '7002595243', 'nirupam17paul@gmail.com', 'A-', '2020-12-31', 'baskfajsflia', 'Accepted'),
-(13, 'Zahid Mansur ', 21, 'M', '9435545402', 'zahid@gmail.com', 'O-', '2021-01-17', 'fxgxfgx', 'Accepted'),
-(15, 'Nirupam', 20, 'M', '7002595243', 'nirupam17paul@gmail.com', 'AB+', '2021-01-13', 'dshashduiahfiuauaihui', 'Processing'),
-(17, 'Tridip Kalita', 25, 'M', '8486122605', 'tridipkalita100@gmail.com', 'A-', '2021-02-07', 'Need It', 'Accepted'),
-(18, 'Tridip Kalita', 25, 'M', '8486122605', 'tridipkalita100@gmail.com', 'AB+', '2021-02-07', 'Urgent', 'Processing'),
-(19, 'Tridip Kalita', 25, 'M', '8486122605', 'tridipkalita100@gmail.com', 'AB-', '2021-02-07', 'Need it', 'Pending');
+(21, 'Register1', 20, 'M', '1234567890', 'register1@gmail.com', 'A+', '2021-02-08', 'Urgent', 'Processing'),
+(22, 'Register1', 20, 'M', '1234567890', 'register1@gmail.com', 'B+', '2021-02-05', 'Emergency', 'Accepted'),
+(23, 'Register1', 20, 'M', '1234567890', 'register1@gmail.com', 'AB+', '2021-02-09', 'Urgent need', 'Pending'),
+(24, 'Register2', 22, 'F', '1234567891', 'register2@gmail.com', 'A-', '2021-02-04', 'Medical Emergency', 'Processing'),
+(25, 'Register3', 24, 'M', '1234567892', 'register3@gmail.com', 'O+', '2021-02-08', 'Emergency', 'Pending');
 
 --
 -- Indexes for dumped tables
@@ -296,19 +292,19 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `camps`
 --
 ALTER TABLE `camps`
-  MODIFY `camp_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `camp_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `contact_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `contact_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `donation`
 --
 ALTER TABLE `donation`
-  MODIFY `donar_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `donar_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `employee`
@@ -320,13 +316,13 @@ ALTER TABLE `employee`
 -- AUTO_INCREMENT for table `registration`
 --
 ALTER TABLE `registration`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `request`
 --
 ALTER TABLE `request`
-  MODIFY `req_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `req_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

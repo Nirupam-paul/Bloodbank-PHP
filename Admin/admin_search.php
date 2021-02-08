@@ -1,19 +1,32 @@
 <?php
 include('admin_header.php');
-$res_count = 0;
+$res_count_reg = 0;
+$res_count_donor = 0;
 $bggroup = "";
-$no_result = False;
+$no_result_reg = False;
+$no_result_donor = False;
 
 if (isset($_POST['donar_search'])) {
     $bggroup = $_POST['blood_group'];
-    $sql = "SELECT * FROM registration WHERE blood_group = '" . $bggroup . "'";
-    $res = mysqli_query($con, $sql);
-    $res_count = mysqli_num_rows($res);
+    //From Registered Table
+    $sql_reg = "SELECT * FROM registration WHERE blood_group = '" . $bggroup . "'";
+    $res_reg = mysqli_query($con, $sql_reg);
+    $res_count_reg = mysqli_num_rows($res_reg);
 
-    if($res_count == 0){
-        $no_result = True;
+    if($res_count_reg == 0){
+        $no_result_reg = True;
     }else{
-        $no_result = False;
+        $no_result_reg = False;
+    }
+    //From Donor Table
+    $sql_donor = "SELECT * FROM donation WHERE bloodgroup = '".$bggroup."'";
+    $res_donor = mysqli_query($con,$sql_donor);
+    $res_count_donor = mysqli_num_rows($res_donor);
+
+    if($res_count_donor == 0){
+        $no_result_donor = True;
+    }else{
+        $no_result_donor = False;
     }
 }
 ?>
@@ -52,8 +65,9 @@ if (isset($_POST['donar_search'])) {
                                 <h3 class="h3-md steelblue-color text-center">Please Select Blood Group</h3>
                                 <?php } else {  ?>
                                     <h3 class="h3-md steelblue-color text-center">RESULTS FOR : <?php echo $bggroup ?> BLOODGROUP</h3>
+                                    <h3 class="h3-md steelblue-color text-center">From Registered User:</h3>
                                         <?php } ?>
-                                        <?php if ($res_count > 0) { ?>
+                                        <?php if ($res_count_reg > 0) { ?>
                                             <div class="pricing-table mb-40 bg-lightgrey">
                                                 <table class="table table-hover">
                                                     <thead>
@@ -68,15 +82,15 @@ if (isset($_POST['donar_search'])) {
                                                     </thead>
                                                     <tbody>
                                                     <?php
-                                                        while ($row = mysqli_fetch_assoc($res)) {
+                                                        while ($row_reg = mysqli_fetch_assoc($res_reg)) {
                                                         ?>
                                                         <tr>
-                                                            <td><?php echo $row['Name'] ?></td>
-                                                            <td><?php echo $row['Age'] ?></td>
-                                                            <td><?php echo $row['Gender'] ?></td>
-                                                            <td><?php echo $row['Phone'] ?></td>
-                                                            <td><?php echo $row['email'] ?></td>
-                                                            <td><?php echo $row['blood_group'] ?></td>
+                                                            <td><?php echo $row_reg['Name'] ?></td>
+                                                            <td><?php echo $row_reg['Age'] ?></td>
+                                                            <td><?php echo $row_reg['Gender'] ?></td>
+                                                            <td><?php echo $row_reg['Phone'] ?></td>
+                                                            <td><?php echo $row_reg['email'] ?></td>
+                                                            <td><?php echo $row_reg['blood_group'] ?></td>
                                                         </tr>
                                                         <?php
                                                         }
@@ -86,7 +100,50 @@ if (isset($_POST['donar_search'])) {
                                             </div>
                                             <?php } ?>
                                             <?php
-                                                if($no_result == True){ ?>
+                                                if($no_result_reg == True){ ?>
+                                                <h3 class="h3-md steelblue-color text-center">OOPs!! No Result Found</h3>
+                                                <?php
+                                                    }
+                                                ?>
+                        </div>
+                        <div class="txt-block pr-30">
+                        <?php if ($bggroup != "") { ?>
+                             <h3 class="h3-md steelblue-color text-center">From Donor List: </h3>
+                             <?php
+                        }
+                             ?>
+                                        <?php if ($res_count_donor > 0) { ?>
+                                            <div class="pricing-table mb-40 bg-lightgrey">
+                                                <table class="table table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Name</th>
+                                                            <th scope="col">Phone</th>
+                                                            <th scope="col">Email</th>
+                                                            <th scope="col">Blood Group</th>
+                                                            <th scope="col">Camp Name</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <?php
+                                                        while ($row_donor = mysqli_fetch_assoc($res_donor)) {
+                                                        ?>
+                                                        <tr>
+                                                            <td><?php echo $row_donor['name'] ?></td>
+                                                            <td><?php echo $row_donor['phone'] ?></td>
+                                                            <td><?php echo $row_donor['email'] ?></td>
+                                                            <td><?php echo $row_donor['bloodgroup'] ?></td>
+                                                            <td><?php echo $row_donor['camp'] ?></td>
+                                                        </tr>
+                                                        <?php
+                                                        }
+                                                        ?>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <?php } ?>
+                                            <?php
+                                                if($no_result_donor == True){ ?>
                                                 <h3 class="h3-md steelblue-color text-center">OOPs!! No Result Found</h3>
                                                 <?php
                                                     }
