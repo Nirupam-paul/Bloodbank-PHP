@@ -10,16 +10,16 @@ include('header.php');
         <div id="hero-section-form" class="text-center mb-40">
             <form method="POST" class="row g-3" enctype="multipart/form-data">
                             <div class="col-md-6 mt-3">
-                                <input required type="text" style="height:50px;" class="form-control" id="inputEmail4" name="name" placeholder="Your Name*">
+                                <input required type="text" style="height:50px;" class="form-control" id="inputEmail4" name="name" placeholder="Enter Name*">
                             </div>
                             <div class="col-md-6 mt-3">
-                                <input required type="number" style="height:50px;" class="form-control" id="inputPassword4" name="age" placeholder="Your Age*">
+                                <input required type="number" style="height:50px;" class="form-control" id="inputPassword4" name="age" placeholder="Enter Age*">
                             </div>
                             <div class="col-md-6 mt-3">
-                                <input required type="email" style="height:50px;" class="form-control" id="inputEmail4" name="email" placeholder="Your Email*">
+                                <input required type="email" style="height:50px;" class="form-control" id="inputEmail4" name="email" placeholder="Enter Email*">
                             </div>
                             <div class="col-md-6 mt-3">
-                                <input required type="number" style="height:50px;" class="form-control" id="inputPassword4" name="phone" placeholder="Your Phonenumber*">
+                                <input required type="number" style="height:50px;" class="form-control" id="inputPassword4" name="phone" placeholder="Enter Phone number*">
                             </div>
                             <div class="col-md-6 mt-3"> 
                                 <select required id="inputState" style="height:50px; 
