@@ -40,16 +40,8 @@
   <?php
     include('databaseconnect.php');
     include('function.php');
-
+    include('constant.php');
     session_start();
-    if(isset($_SESSION['username'])){
-        $user = $_SESSION['username'];
-        $phone = $_SESSION['phone'];
-    }
-    else{
-      redirect('login.php');
-    }
-
   ?>
 
 <!-- PAGE CONTENT
@@ -108,12 +100,23 @@
                         
                         <li class="nl-simple" aria-haspopup="true"><a href="contact.php">Contact us</a></li>
                         
-                        <li aria-haspopup="true"><a href="#"><i class="fa fa-user" aria-hidden="true"></i><?php echo strtoupper($user) ?><span class="wsarrow"></span></a>
+                        <?php if(isset($_SESSION['username'])){?>
+
+                        <li aria-haspopup="true"><a href="#"><i class="fa fa-user" aria-hidden="true"></i><?php echo strtoupper($_SESSION['username']) ?><span class="wsarrow"></span></a>
                           <ul class="sub-menu">
-							  <li aria-haspopup="true"><a href="profile.php">Profile</a></li>
+							                <li aria-haspopup="true"><a href="profile.php">Profile</a></li>
                               <li aria-haspopup="true"><a href="logout.php">Logout</a></li>
                           </ul>
                         </li>
+                        <?php  
+                        }
+                        else{
+                        ?>
+                        <li class="nl-simple" aria-haspopup="true"><a href="login.php">Login</a></li>
+                        <li class="nl-simple" aria-haspopup="true"><a href="register.php">Register</a></li>
+                        <?php 
+                        }
+                        ?>
                         
                         <!-- NAVIGATION MENU BUTTON -->
                         <li class="nl-simple header-btn" aria-haspopup="true"><a href="request.php">Request Here</a></li>

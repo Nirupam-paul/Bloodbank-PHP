@@ -65,6 +65,7 @@ if(isset($_POST['status_change'])){
                                     <th scope="col">Contact Id</th>
                                     <th scope="col">Name</th>
                                     <th scope="col">Phone</th>
+                                    <th scope="col">Email</th>
                                     <th scope="col">Subject</th>
                                     <th scope="col">Description</th>
                                     <th scope="col">Status</th>
@@ -77,6 +78,7 @@ if(isset($_POST['status_change'])){
                                     <td><?php echo $row_pending['contact_id'] ?></td>
                                     <td><?php echo $row_pending['name'] ?></td>
                                     <td><?php echo $row_pending['phone'] ?></td>
+                                    <td><?php echo $row_pending['email'] ?></td>
                                     <td><?php echo $row_pending['subject'] ?></td>
                                     <td><?php echo $row_pending['description'] ?></td>
                                     <td><?php echo $row_pending['status'] ?></td>
@@ -117,6 +119,7 @@ if(isset($_POST['status_change'])){
                                 <th scope="col">Contact Id</th>
                                 <th scope="col">Name</th>
                                 <th scope="col">Phone</th>
+                                <th scope="col">Email</th>
                                 <th scope="col">Subject</th>
                                 <th scope="col">Description</th>
                                 <th scope="col">Status</th>
@@ -127,6 +130,7 @@ if(isset($_POST['status_change'])){
                                 <td><?php echo $row_success['contact_id'] ?></td>
                                 <td><?php echo $row_success['name'] ?></td>
                                 <td><?php echo $row_success['phone'] ?></td>
+                                <td><?php echo $row_success['email'] ?></td>
                                 <td><?php echo $row_success['subject'] ?></td>
                                 <td><?php echo $row_success['description'] ?></td>
                                 <td><?php echo $row_success['status'] ?></td>

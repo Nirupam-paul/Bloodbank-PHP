@@ -6,4 +6,8 @@ function redirect($link){
     </script>
 <?php    
 }
+
+function display_msg($msg){
+    echo "<script>alert('$msg')</script>";
+}
 ?>

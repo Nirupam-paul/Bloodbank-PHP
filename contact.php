@@ -2,13 +2,12 @@
     include('header.php');
 
     if(isset($_POST['contact_submit'])){
+		$name = $_POST['name'];
+		$phone = $_POST['phone'];
+		$email = $_POST['email'];
         $subject = $_POST['subject'];
-        $description = $_POST['description'];
-        if(isset($_SESSION['username'])){
-            $name = $_SESSION['username'];
-            $phone = $_SESSION['phone'];
-        }
-        $sql = "INSERT INTO contact(subject,description,name,phone) VALUES('".$subject."','".$description."','".$name."','".$phone."')";
+        $description = $_POST['message'];
+        $sql = "INSERT INTO contact(subject,description,name,phone,email) VALUES('".$subject."','".$description."','".$name."','".$phone."','".$email."')";
         $res = mysqli_query($con,$sql);
         if($res == False){
 
@@ -67,7 +66,7 @@
 						<!-- CONTACT FORM -->	
 				 		<div class="col-md-7 col-lg-8">
 				 			<div class="form-holder mb-40">
-				 				<form name="contactForm" class="row contact-form">
+				 				<form method="POST" name="contactForm" class="row contact-form">
 				                                            
 					                <!-- Contact Form Input -->
 					                <div id="input-name" class="col-md-12 col-lg-6">
@@ -82,16 +81,6 @@
 					                	<input type="tel" name="phone" class="form-control phone" placeholder="Enter Your Phone Number*" required> 
 					                </div>	
 
-					                <!-- Form Select -->
-					                <div id="input-patient" class="col-md-12 col-lg-6 input-patient">
-					                    <select id="inlineFormCustomSelect3" name="patient" class="custom-select patient" required>
-					                        <option value="">Have You Visited Us Before?*</option>
-											<option>New Patient</option>
-											<option>Returning Patient</option>
-											<option>Other</option>
-					                    </select>
-					                </div>
-
 					                <div id="input-subject" class="col-lg-12">
 					                	<input type="text" name="subject" class="form-control subject" placeholder="Subject*" required> 
 					                </div>					                          
@@ -102,13 +91,8 @@
 					                                            
 					                <!-- Contact Form Button -->
 					                <div class="col-lg-12 mt-15 form-btn">  
-					                	<button type="submit" class="btn btn-blue blue-hover submit">Send Your Message</button> 
+					                	<button type="submit" name="contact_submit" class="btn btn-blue">Send Your Message</button> 
 					                </div>
-					                                                              
-					                <!-- Contact Form Message -->
-					                <div class="col-lg-12 contact-form-msg text-center">
-					                	<div class="sending-msg"><span class="loading"></span></div>
-					                </div>  
 				                                              
 				                </form> 
 
@@ -121,31 +105,6 @@
 
 				</div>	   <!-- End container -->		
 			</section>
-
-
-
-<div class="container card mt-20">
-<br>
-    <form method="POST" class=" text-center">
-        <div class="card-header text-center" >
-            <h1 class="display-4" >CONTACT FORM</h1>
-        </div>
-        <br>
-        <div class="input-group mb-3 pl-50 pr-50">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon3">Subject</span>
-            </div>
-            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="subject">
-        </div>
-        <div class="input-group pl-50 pr-50">
-            <div class="input-group-prepend">
-                <span class="input-group-text">Description</span>
-            </div>
-            <textarea class="form-control" aria-label="With textarea " name="description"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary " name="contact_submit">Submit</button>
-    </form>
-</div>
 <?php 
     include('footer.php');
 ?>

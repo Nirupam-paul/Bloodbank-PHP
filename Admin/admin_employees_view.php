@@ -90,7 +90,7 @@ if(isset($_POST['submit_salary'])){
                                             <div class="input-group mb-3">
                                                 <input type="number" name="salary_amt" class="form-control" placeholder="Enter Salary" aria-label="Recipient's username" aria-describedby="basic-addon2">
                                                 <div class="input-group-append">
-                                                    <button type="submit"  name="submit_salary" value="<?php echo $row_pending['emp_id'] ?>" class="btn btn-sm btn-tra-black blue-hover">Button</button>
+                                                    <button type="submit"  name="submit_salary" value="<?php echo $row_pending['emp_id'] ?>" class="btn btn-sm btn-tra-black blue-hover">Change</button>
                                                 </div>
                                             </div>
                                         </td>

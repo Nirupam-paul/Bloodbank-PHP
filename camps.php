@@ -37,7 +37,7 @@ $camp_res=mysqli_num_rows($res);
 						<div class="col-md-6 col-lg-6">
 							<div class="doctor-2">	
 								<div class="hover-overlay"> 
-									<img class="img-fluid" src="images/images-doctor-1.jpg" alt="doctor-foto">	
+									<img class="img-fluid" src="<?php echo DISPLAY_CAMP_IMAGE.$row['image'] ?>" alt="Loading">	
 								</div>		
 								<div class="doctor-meta">
 

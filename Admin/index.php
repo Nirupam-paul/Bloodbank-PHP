@@ -1,5 +1,6 @@
 <?php
 include('admin_header.php');
+include('../constant.php');
 
 # Total Registration
 $sql_registration = "SELECT * FROM registration";
@@ -264,7 +265,7 @@ $res_camps_count = mysqli_num_rows($res_camps);
 				<div class="col-md-6 col-lg-6">
 				    <div class="doctor-2">	
 						<div class="hover-overlay"> 
-							<img class="img-fluid" src="images\gallery-image-8.jpg" alt="doctor-foto">	
+							<img class="img-fluid" src="<?php echo DISPLAY_CAMP_IMAGE.$row_camps['image'] ?>" alt="Loading">	
 						</div>		
 					<div class="doctor-meta">
                         <h5 class="h5-xs blue-color"><?php echo $row_camps['camp_title'] ?></h5>

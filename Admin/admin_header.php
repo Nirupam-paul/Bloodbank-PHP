@@ -60,7 +60,7 @@ else{
 			
         <div class="wsmobileheader clearfix">
               <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
-              <span class="smllogo"><img src="images/logo-grey.png" width="180" height="40" alt="mobile-logo"/></span>
+              <span class="smllogo"><img src="images/logo.png" width="180" height="40" alt="mobile-logo"/></span>
               <a href="tel:123456789" class="callusbtn"><i class="fas fa-phone"></i></a>
         </div>
 
@@ -94,7 +94,7 @@ else{
                 <!-- LOGO IMAGE -->
                 <!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 360 x 80 pixels) -->
                 <div class="desktoplogo">
-                  <a href="index.php"><img src="images/logo-grey.png" width="180" height="40" alt="header-logo"></a>
+                  <a href="index.php"><img src="images/logo.png" width="180" height="40" alt="header-logo"></a>
                 </div>
 
                 <!-- MAIN MENU -->
@@ -121,7 +121,6 @@ else{
                               <li aria-haspopup="true"><a href="admin_logout.php">Logout</a></li>
                           </ul>
                         </li>
-                        
                         <!-- NAVIGATION MENU BUTTON -->
                         <li class="nl-simple header-btn" aria-haspopup="true"><a href="admin_search.php"><i class="fa fa-search" aria-hidden="true"></i>Search</a></li>
                       </ul>
