@@ -58,8 +58,9 @@ include('header.php');
                             <div class="col-6 mt-3">
                                 <input required type="password" style="height:50px;" class="form-control" id="inputAddress" name="confirm_password" placeholder="Confirm Password">
                             </div>
-                            <div class="col-12 mt-3">
-                                <input required type="file" style="height:50px;" class="form-control" id="inputAddress" name="profile_pic">
+                            <div class="col-12 mt-3 custom-file">
+                                <input required type="file" style="height:50px;" class="custom-file-input" id="customFile" name="profile_pic">
+                                <label class="custom-file-label" for="customFile">Choose File</label>
                             </div>
                             <div class="col-12 text-center mt-5 mb-5">
                                 <button type="submit" class="btn btn-orange btn-md btn-tra-black blue-hover" style="width: 50%;" name="register_submit">Register</button>
