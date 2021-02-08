@@ -38,19 +38,17 @@
 		 					<!-- General Information -->
 		 					<div class="contact-box mb-40">
 								<h5 class="h5-sm steelblue-color">General Information</h5>
-								<p>121 King Street, Melbourne,</p> 
-								<p>Victoria 3000 Australia</p>
-								<p>Phone: +12 9 8765 4321</p>
-								<p>Email: <a href="mailto:yourdomain@mail.com" class="blue-color">hello@yourdomain.com</a></p>
+								<p>Hatkhuwapara,Azara</p> 
+								<p>GIMT,Guwahati</p>
+								<p>Pin:781017</p>
+								<p>Phone:+91 90856 60123</p>
+								<p class="foo-email mt-10">Emails:<br/> <a href="mailto:yourdomain@mail.com">zahidmansur32@gmail.com<br/>
+								tridipkalita100@gmail.com<br/>
+								nirupam17paul@gmail.com</a></p>
 		 					</div>
 
 		 					<!-- Patient Experience -->
-		 					<div class="contact-box mb-40">
-								<h5 class="h5-sm steelblue-color">Patient Experience</h5>
-								<p>Hannah Harper - Patient Experience Coordinator</p>
-								<p>Phone: +12 9 8765 4321</p>
-								<p>Email: <a href="mailto:yourdomain@mail.com" class="blue-color">hello@yourdomain.com</a></p>
-		 					</div>
+		 					
 
 		 					<!-- Working Hours -->
 		 					<div class="contact-box mb-40">

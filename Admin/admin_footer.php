@@ -30,12 +30,12 @@
                         <p>Hatkhuapara,Azaea</p> 
 					    <p>Guwahati,pin:781017</p>
                         <!-- Email -->
-                        <p class="foo-email mt-10">Email:<br/> <a href="mailto:yourdomain@mail.com">zahidmansur32@gmail.com<br/>
+                        <p class="foo-email mt-10">Emails:<br/> <a href="mailto:yourdomain@mail.com">zahidmansur32@gmail.com<br/>
 								tridipkalita100@gmail.com<br/>
 								nirupam17paul@gmail.com</a></p>
 
                         <!-- Phone -->
-                        <p>P: +91 90856 60123</p>
+                        <p>Phone: +91 90856 60123</p>
                     </div>
                 </div>
                 <!-- FOOTER WORKING HOURS -->
