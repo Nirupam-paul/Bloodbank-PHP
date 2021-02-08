@@ -1,55 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Login Form</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="css/login.css">
-</head>
-<body>
-  <div container>
-    <div class="row">
-      <div class="col-6 offset-3">
-        <div class="card text-center" style="margin-top: 100px;">
-          <div class="card-header">
-          <h1>Log In</h1>
-          </div>
-          <div class="card-body">
-            <form method="POST">
+<?php include('header.php') ?>
+
+<section id="hero-4" class="bg-fixed hero-section division">
+	<div class="container">
+        <h3 class="h3-sm steelblue-color text-center mb-4">Log In</h3>
+        <div id="hero-section-form" class="text-center mb-40">
+            <form method="POST" class="row g-3">
+            <div class="col-lg-6 col-md-6 offset-lg-3 offset-md-3">
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">Phone</span>
+                    <span class="input-group-text bg-blue white-color" id="basic-addon1">Phone</span>
                 </div>
-                <input type="number" class="form-control"  aria-label="Username" aria-describedby="basic-addon1" name="mobile">
+                <input required type="number" class="form-control"  aria-label="Username" aria-describedby="basic-addon1" name="mobile">
               </div>
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">Password</span>
+                    <span class="input-group-text bg-blue white-color" id="basic-addon1">Password</span>
                 </div>
-                <input type="password" class="form-control"  aria-label="Username" aria-describedby="basic-addon1" name="password">
+                <input required type="password" class="form-control"  aria-label="Username" aria-describedby="basic-addon1" name="password">
               </div>
-              <div class="col-12" style="text-align: left;">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                      Remember
-                    </label>
-                  </div>
+              <div class="col-12 text-center mt-5 mb-2">
+                <button type="submit" class="btn btn-orange btn-md btn-tra-black blue-hover" style="width: 50%;" name="login_form">Login</button>
               </div>
-              <button type="submit" style="margin: 10px; width: 30%;" class="btn btn-danger " name="login_form">Sign in</button> 
-            </form>
-            <div class="card-footer text-center ">
-            <p>Not a member? <a href="register.php" style="color: red;">Register</a></p>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            </form> 
+		    </div>
   </div>
+</section>
 
  <?php
-    include('databaseconnect.php');
-    include('function.php');
     if (isset($_POST["login_form"])) {
 
         $phone = $_POST["mobile"];
@@ -112,6 +90,6 @@
         }
     }
   }
+
+  include('footer.php')
     ?>
-</body>
-</html>

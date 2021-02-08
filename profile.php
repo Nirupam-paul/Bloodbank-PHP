@@ -160,10 +160,10 @@ if (isset($_POST['submit_delete'])) {
                 </div>
             </div> <!-- END My Accepted Request-->
         </div>
-
+    
         <div class="row">
             <!-- My Pending Request -->
-            <div class="col-md-6">
+            <div class="col-md-6 col-lg-6">
                 <div class="doctor-bio">
                     <h5 class="h5-md steelblue-color">My Pending Request</h5>
                     <div class="pricing-table mb-40">
@@ -212,7 +212,7 @@ if (isset($_POST['submit_delete'])) {
             </div> <!-- END My Pending Request -->
 
             <!-- My Processing Request -->
-            <div class="col-md-6">
+            <div class="col-md-6 col-lg-6">
                 <div class="doctor-bio">
                     <h5 class="h5-md steelblue-color">My Processing Request</h5>
                     <div class="pricing-table mb-40">
@@ -258,9 +258,6 @@ if (isset($_POST['submit_delete'])) {
             </div> <!-- END My Processing Request -->
 
         </div>
-
-
-    </div> <!-- End row -->
     </div> <!-- End container -->
 </section><!-- END DOCTOR-1 DETAILS -->
 

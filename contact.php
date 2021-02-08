@@ -69,7 +69,7 @@
 				 				<form method="POST" name="contactForm" class="row contact-form">
 				                                            
 					                <!-- Contact Form Input -->
-					                <div id="input-name" class="col-md-12 col-lg-6">
+					                <div id="input-name" class="col-md-12 col-lg-12">
 					                	<input type="text" name="name" class="form-control name" placeholder="Enter Your Name*" required> 
 					                </div>
 					                        
