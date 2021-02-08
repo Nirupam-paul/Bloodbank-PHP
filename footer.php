@@ -16,8 +16,7 @@
 
 								<!-- Footer Logo -->
 								<!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 360 x 80  pixels) -->
-								<img src="images/images-footer-logo.png" width="180" height="40" alt="footer-logo"><!-- Text --><p class="p-sm mt-20">Aliquam orci nullam tempor sapien gravida donec an enim ipsum porta
-								   justo at velna auctor congue
+								<img src="images/logo.png" width="180" height="40" alt="footer-logo"><!-- Text --><p class="p-sm mt-20">“To give blood you need neither extra strength nor extra food, and you will save a life.”
 								</p>  
 
 								<!-- Social Icons -->
@@ -53,14 +52,16 @@
 								<h5 class="h5-xs">Our Location</h5>
 
 								<!-- Address -->
-								<p>121 King Street, Melbourne,</p> 
-								<p>Victoria 3000 Australia</p>
+								<p>Hatkhuapara,Azaea</p> 
+								<p>Guwahati,pin:781017</p>
 								
 								<!-- Email -->
-								<p class="foo-email mt-20">E: <a href="mailto:yourdomain@mail.com">hello@yourdomain.com</a></p>
+								<p class="foo-email mt-10">Email:<br/> <a href="mailto:yourdomain@mail.com">zahidmansur32@gmail.com<br/>
+								tridipkalita100@gmail.com<br/>
+								nirupam17paul@gmail.com</a></p>
 
 								<!-- Phone -->
-								<p>P: +12 9 8765 4321</p>
+								<p>P: +91 90856 60123</p>
 
 							</div>
 						</div>
@@ -91,11 +92,10 @@
 								<h5 class="h5-xs">Emergency Cases</h5>
 
 								<!-- Footer List -->
-								<h5 class="h5-xl blue-color">1-800-123-4560</h5>
+								<h5 class="h5-xl blue-color" style="color:red">1800-1110-0000</h5>
 
 								<!-- Text -->	
-								<p class="p-sm mt-15">Aliquam orci nullam undo tempor sapien gravida donec enim ipsum porta
-								   justo velna aucto magna
+								<p class="p-sm mt-15">“If you’re a blood donor, you’re a hero to someone, somewhere, who received your gracious gift of life.”
 								</p> 																												
 
 							</div>
@@ -109,7 +109,7 @@
 					<div class="bottom-footer">
 						<div class="row">
 							<div class="col-md-12">
-								<p class="footer-copyright text-center">&copy; 2021 <span>MedService</span>. All Rights Reserved</p>
+								<p class="footer-copyright text-center">&copy; 2021 <span>LIVE SAVER</span>. All Rights Reserved</p>
 							</div>
 						</div>
 					</div>

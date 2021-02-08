@@ -65,8 +65,7 @@
 
                 <!-- Address -->
                 <div class="headertopleft">			     			
-                    <div class="address clearfix"><span><i class="fas fa-map-marker-alt"></i>121 King St,
-                        Melbourne, VIC 3000 </span> <a href="tel:123456789" class="callusbtn"><i class="fas fa-phone"></i>(800)-569-7890</a>
+                    <div class="address clearfix"><span> </span> <a href="tel:123456789" class="callusbtn"></a>
                       </div>
                 </div>
 
