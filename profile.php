@@ -57,28 +57,27 @@ if (isset($_POST['submit_delete'])) {
 
 
 <!-- DOCTOR BREADCRUMBS -->
-<section id="doctor-breadcrumbs" class="bg-fixed doctor-details-section division">
+<section id="doctor-breadcrumbs" class="bg-fixed doctor-details-section division ">
     <div class="container">
         <div class="row">
             <div class="col-md-7 offset-md-5">
                 <div class="doctor-data white-color">
-                    <h2 class="h2-xs"><?php echo $name ?></h2>
+                    <h2 class="h2-xs text-center mt-5" style="margin-bottom:-30px;"><?php echo $name ?></h2>
                 </div>
             </div>
-        </div> <!-- End row -->
-    </div> <!-- End container -->
+        </div> 
+    </div> 
 </section><!-- END DOCTOR BREADCRUMBS -->
 
 <!-- DOCTOR-1 DETAILS -->
-<section id="doctor-1-details" class="doctor-details-section division" style="background-color: #DBF1FF;">
+<section id="doctor-1-details" class="doctor-details-section division" style="background-color: #DBF1FF; ">
     <div class="container ">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 col-lg-4 offset-md-4 offset-lg-4">
                 <div class="doctor-photo mb-40">
                     <img class="img-fluid" src="<?php echo DISPLAY_USER_PROFILE_IMAGE . $image ?>" alt="User Image">
-
-                    <div class="doctor-info" style="background-color: #DBF1FF;">
-                        <table class="table table-striped">
+                    <div class="doctor-info" style="background-color: #DBF1FF;margin-top:-5px;">
+                        <table class="table table-striped" >
                             <tbody>
                                 <tr>
                                     <td>Age</td>
@@ -113,10 +112,10 @@ if (isset($_POST['submit_delete'])) {
             </div> <!-- END DOCTOR PHOTO -->
 
             <!--My Accepted Request-->
-            <div class="col-md-8">
+            <div class="col-md-10 col-lg-10 offset-md-1 offset-lg-1">
                 <div class="doctor-bio">
-                    <h5 class="h5-md steelblue-color">My Accepted Request</h5>
-                    <div class="pricing-table mb-40">
+                    <h5 class="h5-md steelblue-color text-center">My Accepted Request</h5>
+                    <div class="pricing-table mb-20">
                         <?php if ($blood_request_accepted > 0) { ?>
 
                             <table class="table table-hover">
@@ -159,14 +158,10 @@ if (isset($_POST['submit_delete'])) {
                     </div>
                 </div>
             </div> <!-- END My Accepted Request-->
-        </div>
-    
-        <div class="row">
-            <!-- My Pending Request -->
-            <div class="col-md-10 col-lg-10">
+            <div class="col-md-10 col-lg-10 offset-md-1 offset-lg-1">
                 <div class="doctor-bio">
-                    <h5 class="h5-md steelblue-color">My Pending Request</h5>
-                    <div class="pricing-table mb-40">
+                    <h5 class="h5-md steelblue-color text-center">My Pending Request</h5>
+                    <div class="pricing-table mb-20">
                         <?php if ($blood_request_pending > 0) { ?>
                             <table class="table table-hover">
                                 <thead>
@@ -191,7 +186,7 @@ if (isset($_POST['submit_delete'])) {
                                             <td><?php echo $row_pending['Status']?></td>
                                             <td>
                                             <form method="POST">
-                                                <button type="submit" name="submit_delete" value="<?php echo $row_pending['req_id'] ?>" class="btn btn-danger btn-sm" style="background-color:red;">Delete Request</button>
+                                                <button type="submit" name="submit_delete" value="<?php echo $row_pending['req_id'] ?>" class="btn btn-orange btn-xs btn-tra-black blue-hover">Delete</button>
                                             </form>
                                             </td>
                                         </tr>
@@ -211,14 +206,11 @@ if (isset($_POST['submit_delete'])) {
                         ?>
                     </div>
                 </div>
-            </div> <!-- END My Pending Request -->
-        </div>
-        <div class="row">
-            <!-- My Processing Request -->
-            <div class="col-md-10 col-lg-10">
+            </div>
+            <div class="col-md-10 col-lg-10 offset-md-1 offset-lg-1">
                 <div class="doctor-bio">
-                    <h5 class="h5-md steelblue-color">My Processing Request</h5>
-                    <div class="pricing-table mb-40">
+                    <h5 class="h5-md steelblue-color text-center">My Processing Request</h5>
+                    <div class="pricing-table mb-20">
                         <?php if ($blood_request_processing > 0) { ?>
                             <table class="table table-hover">
                                 <thead>
@@ -258,8 +250,7 @@ if (isset($_POST['submit_delete'])) {
                         ?>
                     </div>
                 </div>
-            </div> <!-- END My Processing Request -->
-
+            </div>
         </div>
     </div> <!-- End container -->
 </section><!-- END DOCTOR-1 DETAILS -->

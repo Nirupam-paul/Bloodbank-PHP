@@ -21,7 +21,7 @@ $camp_res=mysqli_num_rows($res);
 								    	<li class="breadcrumb-item active" aria-current="page">Camps</li>
 								  	</ol>
 								</nav>
-								<h4 class="h4-sm steelblue-color">Camps Organized By Us</h4>
+								<h4 class="h4-sm steelblue-color">CAMPS</h4>
 
 							</div>
 						</div>

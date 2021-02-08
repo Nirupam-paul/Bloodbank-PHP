@@ -296,7 +296,7 @@ $res_blood_dona_count = mysqli_num_rows($res_blood_dona);
 
 									<!-- Section ID -->	
                                      <span class="section-id id-color text-center">Blood Bank</span>
-                                     <h3>Better Technologies for Better Healthcare</h3>
+                                     <h3>Better Technologies for Better Blood Preservation</h3>
 									<p style="text-align: justify;">We welcome you to in our WebSite. If you are a donor , We appreciate you to join our blood donation camp nearest to you. If you need blood we are happy to serve you. Kindly visit our request page hosted by www.lifesaver.com on behalf of "Life Saver Blood Bank". As a public service without any profit motive.This is a free service. While the Organisers have taken all steps to obtain accurate and up-to-date information of potential blood donors, the Organisers and ICM Computers do not guarantee accuracy of the information contained herein or the suitability of the persons listed as any liability for direct or consequential damage to any person using this blood donor list including loss of life or damage due to infection of any nature arising out of blood transfusion from persons whose names have been listed in this website. We request donors to update contact details regularly.
 								    </p>
 
